@@ -82,7 +82,7 @@
 }
 .skin-black-light .content-wrapper,
 .skin-black-light .main-footer {
-  border-left: 1px solid #d2d6de;
+  border-left: 1px solid #eeeeee;
 }
 .skin-black-light .user-panel > .info,
 .skin-black-light .user-panel > .info > a {
@@ -133,7 +133,7 @@
 }
 .skin-black-light .sidebar-form {
   border-radius: 3px;
-  border: 1px solid #d2d6de;
+  border: 1px solid #eeeeee;
   margin: 10px 10px;
 }
 .skin-black-light .sidebar-form input[type="text"],
@@ -170,6 +170,6 @@
 }
 @media (min-width: 768px) {
   .skin-black-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
-    border-left: 1px solid #d2d6de;
+    border-left: 1px solid #eeeeee;
   }
 }

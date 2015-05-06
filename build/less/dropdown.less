@@ -31,14 +31,15 @@
 
 .navbar-nav > .notifications-menu,
 .navbar-nav > .messages-menu,
-.navbar-nav > .tasks-menu {
+.navbar-nav > .hours-menu,
+.navbar-nav > .ubib-menu {
   position: relative;
   //fix width and padding
   > .dropdown-menu {
     > li {
       position: relative;
     }
-    width: 280px;
+    width: 330px;
     //Remove padding and margins
     padding: 0 0 0 0!important;
     margin: 0!important;
@@ -95,11 +96,15 @@
   }
 }
 
+.navbar-nav > .ubib-menu > .dropdown-menu {
+  width: 192px;
+}
+
 //Notifications menu
 .navbar-nav > .notifications-menu {
   > .dropdown-menu > li .menu {
     // Links inside the menu
-    > li > a {      
+    > li > a {
       color: #444444;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -117,7 +122,7 @@
 }
 
 //Messages menu
-.navbar-nav > .messages-menu {
+.navbar-nav > .messages-menu,.navbar-nav > .hours-menu {
   //Inner menu
   > .dropdown-menu > li .menu {
     // Messages menu item
@@ -141,9 +146,9 @@
         // Small for message time display
         > small {
           color: #999999;
-          font-size: 10px;
+          font-size: 15px;
           position: absolute;
-          top: 0px;
+          top: 30px;
           right: 0px;
         }
       }
@@ -161,7 +166,7 @@
   }
 }
 //Tasks menu
-.navbar-nav > .tasks-menu {
+.navbar-nav > .ubib-menu {
   > .dropdown-menu > li .menu {
     > li > a {
       padding: 10px;
@@ -183,11 +188,11 @@
 //User menu
 .navbar-nav > .user-menu {
   > .dropdown-menu {
-    .border-top-radius(0);    
+    .border-top-radius(0);
     padding: 1px 0 0 0;
     border-top-width: 0;
     width: 280px;
-    
+
     &,
     > .user-body {
       .border-bottom-radius(4px);
@@ -215,7 +220,7 @@
         margin-top: 10px;
         > small {
           display: block;
-          font-size: 12px;
+          font-size: 15px;
         }
       }
     }
