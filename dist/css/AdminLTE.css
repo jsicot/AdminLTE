@@ -2451,6 +2451,12 @@ a:focus {
  * Component: Nav
  * --------------
  */
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+  color: #444;
+  background: #f7f7f7;
+}
 /* NAV PILLS */
 .nav-pills > li > a {
   border-radius: 0;
@@ -2465,9 +2471,7 @@ a:focus {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: #E0E0E0;
   border-top-color: #3c8dbc;
-  color: #444;
 }
 .nav-pills > li.active > a {
   font-weight: 600;
@@ -2496,10 +2500,8 @@ a:focus {
 }
 .nav-stacked > li.active > a,
 .nav-stacked > li.active > a:hover {
-  background-color: #f7f7f7;
   border-top: 0;
   border-left-color: #3c8dbc;
-  color: #444;
 }
 .nav-stacked > li.header {
   border-bottom: 1px solid #ddd;
