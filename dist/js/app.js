@@ -100,22 +100,23 @@ $.AdminLTE.options = {
   },
   //Define the set of colors to use globally around the website
   colors: {
-    lightBlue: "#3c8dbc",
-    red: "#f56954",
-    green: "#00a65a",
-    aqua: "#00c0ef",
-    yellow: "#f39c12",
+    lightBlue: "#3C8DBC",
+    red: "#C20F00",
+    green: "#008a0c",
+    aqua: "#3274c6",
+    yellow: "#D98E21",
     blue: "#0073b7",
-    navy: "#001F3F",
+    navy: "#000AA7",
     teal: "#39CCCC",
     olive: "#3D9970",
     lime: "#01FF70",
-    orange: "#FF851B",
-    fuchsia: "#F012BE",
-    purple: "#8E24AA",
+    orange: "#CD5813",
+    fuchsia: "#AD3376",
+    purple: "#9C00A7",
     maroon: "#D81B60",
-    black: "#222222",
-    gray: "#d2d6de"
+    black: "#333",
+    darkgray: "#666",  
+    gray: "#EEE"
   },
   //The standard screen sizes that bootstrap uses.
   //If you change these in the variables.less file, change
@@ -458,7 +459,7 @@ function _init() {
       var bg = $(".control-sidebar-bg");
       _this._fix(bg);
 
-      //If the body has a fixed layout, make the control sidebar fixed      
+      //If the body has a fixed layout, make the control sidebar fixed
       if ($('body').hasClass('fixed')) {
         _this._fixForFixed(sidebar);
       } else {
@@ -478,7 +479,7 @@ function _init() {
           _this.close(sidebar, slide);
         });
       } else {
-        //Push the content by adding the open class to the body instead 
+        //Push the content by adding the open class to the body instead
         //of the sidebar itself
         $('body').addClass('control-sidebar-open');
       }

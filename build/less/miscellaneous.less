@@ -67,8 +67,14 @@
 .bg-fuchsia-active,
 .bg-purple-active,
 .bg-maroon-active,
-.bg-black-active {
+.bg-black-active,
+.bg-custom {
   color: #fff !important;
+}
+.bg-custom {
+  background: url(@bg-custom) no-repeat scroll 0 0 / cover @black!important;
+  background-attachment: fixed!important;
+
 }
 .bg-gray {
   color: #000;
@@ -231,6 +237,34 @@
   display: none !important;
 }
 
+// Extra Small padding
+.padding-xs {
+    padding: 0.5em !important;
+}
+// Small padding
+.padding-sm {
+    padding: 1em !important;
+}
+// Medium padding
+.padding-md {
+    padding: 2em !important;
+}
+// Large padding
+.padding-lg {
+    padding: 3em !important;
+}
+// XL padding
+.padding-xl {
+    padding: 4em !important;
+}
+// Remove padding
+.no-padding {
+    padding: 0 !important;
+}
+// Remove padding at bottom
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
 // Remove borders
 .no-border {
   border: 0px !important;
@@ -243,7 +277,10 @@
 .no-margin {
   margin: 0px !important;
 }
-
+// Remove margins at bottom
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
 // Remove box shadow
 .no-shadow {
   box-shadow: none!important;
@@ -276,7 +313,46 @@
   height:auto!important;
 }
 
-
+// Transparent Background colors
+.bg-teal-trans {
+  background-color: fadeout(lighten(@teal, 10%), 50%);
+  color: #fff;
+}
+.bg-light-blue-trans {
+  background-color: fadeout(lighten(@light-blue, 10%), 50%);
+  color: #fff;
+}
+.bg-blue-trans {
+  background-color: fadeout(lighten(@blue, 10%), 50%);
+  color: #fff;
+}
+.bg-aqua-trans {
+  background-color: fadeout(lighten(@aqua, 10%), 50%);
+  color: #fff;
+}
+.bg-yellow-trans {
+  background-color: fadeout(lighten(@yellow, 10%), 50%);
+  color: #fff;
+}
+.bg-purple-trans {
+  background-color: fadeout(lighten(@purple, 10%), 50%);
+  color: #fff;
+}
+.bg-green-trans {
+  background-color: fadeout(lighten(@green, 10%), 50%);
+  color: #fff;
+}
+.bg-red-trans {
+  background-color: fadeout(lighten(@red, 10%), 50%);
+  color: #fff;
+}
+.bg-black-trans {
+  background-color: fadeout(lighten(@black, 10%), 50%);
+  color: #fff;
+}
+.bg-maroon-trans {
+  color: #fff;
+}
 // Gradient Background colors
 .bg-teal-gradient {
   .gradient(@teal; @teal; lighten(@teal, 16%))!important;

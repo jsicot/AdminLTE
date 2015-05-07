@@ -13,7 +13,8 @@
     margin-bottom: 0;
     margin-left: @sidebar-width;
     border: none;
-    min-height: @navbar-height;
+    box-shadow: @box-boxshadow;
+    min-height: 55px;
     border-radius: 0;
     .layout-top-nav & {
       margin-left: 0!important;
@@ -67,6 +68,7 @@
     float: left;
     background-color: transparent;
     background-image: none;
+    font-size: 16px;
     padding: @navbar-padding-vertical @navbar-padding-horizontal;
     //Add the fontawesome bars icon
     font-family: fontAwesome;
@@ -95,7 +97,7 @@
 
   //Icons in navbar
   .navbar .nav > li > a > i {
-    font-size: 17px;
+    font-size: 23px;
   }
 
   //Labels in navbar
@@ -114,12 +116,14 @@
     .transition(width @transition-speed @transition-fn);
     display: block;
     float: left;
-    height: @navbar-height;
+    height: 55px;
+    box-shadow: @box-boxshadow;
     font-size: 20px;
     line-height: 50px;
     text-align: center;
     width: @sidebar-width;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @font-family-pochoir;
+    letter-spacing: 0.05em;
     padding: 0 15px;
     font-weight: 300;
     overflow: hidden;
