@@ -47,7 +47,7 @@
   border-bottom: 0px solid transparent;
 }
 .skin-red .main-header .logo:hover {
-  background: #a30d00;
+  background-color: #a30d00;
 }
 .skin-red .main-header li.user-header {
   background-color: #c20f00;
