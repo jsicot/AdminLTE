@@ -74,11 +74,18 @@ desired effect
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
+            <!-- Login: style can be found in dropdown.less-->
+            <li class="contact-menu">
+              <!-- Menu toggle button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-user"></i>
+              </a>
+            </li><!-- /.login-menu -->
             <!-- Hours: style can be found in dropdown.less-->
             <li class="dropdown hours-menu">
               <!-- Menu toggle button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa ion-ios-clock"></i>
+                <i class="fa ion-ios-calendar"></i>
                 <span class="label label-success">8</span>
               </a>
               <ul class="dropdown-menu">
@@ -254,13 +261,6 @@ desired effect
                 <li class="footer"><a href="#">Voir toutes les bibliothèques</a></li>
               </ul>
             </li><!-- /.hours-menu -->
-            <!-- Contact: style can be found in dropdown.less-->
-            <li class="contact-menu">
-              <!-- Menu toggle button -->
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-envelope"></i>
-              </a>
-            </li><!-- /.contact-menu -->
 
             <!-- FAQ Menu -->
             <li class="dropdown notifications-menu">
@@ -320,13 +320,9 @@ desired effect
                 </li>
               </ul>
             </li> <!-- end ubib -->
-            <!-- Login: style can be found in dropdown.less-->
-            <li class="contact-menu">
-              <!-- Menu toggle button -->
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-user"></i>
-              </a>
-            </li><!-- /.login-menu -->
+            <li>
+              <a data-toggle="control-sidebar" href="#"><i class="fa fa ion-ios-clock"></i></a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -381,11 +377,11 @@ desired effect
         </div><!-- /.padding -->
 
       </section>
-      <section class="bg-gray">
+      <section class="bg-black">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <ul class="nav nav-pills ">
+              <ul class="nav nav-pills nav-pills-dark ">
                 <li class="active"><a href="#">Tout</a></li>
                 <li><a href="#">Livres</a></li>
                 <li><a href="#">Articles</a></li>
@@ -421,137 +417,499 @@ desired effect
       </section>
       <section class="content">
         <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-yellow">
-              <div class="inner">
-                <h4>Emprunter, Rendre</h4>
-                <p>un document</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-ios-book-outline"></i>
-              </div>
-              <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-green">
-              <div class="inner">
-                <h4>Réserver, Prolonger</h4>
-                <p>un document</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-android-checkbox-outline"></i>
-              </div>
-              <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-aqua">
-                <div class="inner">
-                  <h4>Suggérer</h4>
-                  <p>un document</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-bag"></i>
-                </div>
-                <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-purple">
-                <div class="inner">
-                  <h4>Faire venir</h4>
-                  <p>un document</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-android-share"></i>
-                </div>
-                <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-          </div><!-- ./col -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-red">
-              <div class="inner">
-                <h4>Consulter</h4>
-                <p>une base de donnée</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-database"></i>
-              </div>
-              <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-navy">
-              <div class="inner">
-                <h4>Imprimer</h4>
-                <p>Photocopier, numériser</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-ios-printer"></i>
-              </div>
-              <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-maroon">
-                <div class="inner">
-                  <h4>Travailler</h4>
-                  <p>en groupe</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-ios-people"></i>
-                </div>
-                <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-          </div><!-- ./col -->
-          <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-orange">
-                <div class="inner">
-                  <h4>Consulter</h4>
-                  <p>un guide</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-erlenmeyer-flask"></i>
-                </div>
-                <a href="#" class="small-box-footer">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-          </div><!-- ./col -->
-        </div><!-- /.row -->
-      </section>
-        <!-- <section class="content-header">
-        <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
-        <li class="active">Ici</li>
-      </ol>
-    </section> -->
-  </div><!-- /.content-wrapper -->
 
-  <!-- Main Footer -->
-  <footer class="main-footer bg-black">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">
-      Université Rennes 2
-    </div>
-    <!-- Default to the left -->
-    <div class="address">
-      <strong>Bibliothèques de l'Université Rennes 2</strong><br>
-      Place du Recteur Henri Le Moal <br>
-      CS 64302<br>
-      35 043 Rennes cedex
-    </div>
-  </footer>
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa fa-stack-overflow"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Emprunter</span>
+                <span class="info-box-description">
+                  rendre un document
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-android-checkbox-outline"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Réserver</span>
+                <span class="info-box-description">
+                  prolonger un document
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-bag"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Suggérer</span>
+                <span class="info-box-description">
+                  un document
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-android-share"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Faire venir</span>
+                <span class="info-box-description">
+                  un document
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-ios-people"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Travailler</span>
+                <span class="info-box-description">
+                  en groupe
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </a>
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-ios-printer"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Imprimer</span>
+                <span class="info-box-description">
+                  photocopier ou numériser
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+
+        <!-- =========================================================== -->
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa fa-user  "></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Accéder</span>
+                <span class="info-box-description">
+                  à mon compte lecteur
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa fa-database"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Consulter</span>
+                <span class="info-box-description">
+                  une base de données
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa fa-graduation-cap "></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Déposer</span>
+                <span class="info-box-description">
+                  ma thèse, mon mémoire
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-android-exit"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Obtenir</span>
+                <span class="info-box-description">
+                  un quitus
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <a href="#">
+              <span class="info-box-icon"><i class="fa ion-calendar"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Demander</span>
+                <span class="info-box-description">
+                  un RDV avec un bibliothécaire
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+            <a href="#">
+              <span class="info-box-icon"><i class="fa fa-slideshare"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">S'inscrire</span>
+                <span class="info-box-description">
+                  à un atelier
+                </span>
+              </div><!-- /.info-box-content -->
+            </a>
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+
+        <!-- =========================================================== -->
+
+          <div class="row ">
+            <section class="col-md-4 col-sm-6 text-center">
+                    <div class=" card">
+                      <a href="#" class="image-link">
+                        <div class="thumbnail">
+                            <img alt="" src="http://placehold.it/900x400">
+                            <span class="overlay"><span class="fa fa-search"></span></span>
+                            <div class="card-icon">
+                                <i class="ion-eye icon bg-green"></i>
+                          </div>
+                            <div class="caption">
+                                <h3>A contre courant !</h3>
+                                <p>Exposition sur les Justes allemands réalisée par le Musée juif de  [...]</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card">
+                      <a href="#" class="image-link">
+                        <div class="thumbnail">
+                            <img alt="" src="http://placehold.it/900x400">
+                            <span class="overlay"><span class="fa fa-search"></span></span>
+                            <div class="card-icon">
+                                <i class="ion-eye icon bg-aqua"></i>
+                          </div>
+                            <div class="caption">
+                                <h3>Wiley</h3>
+                                <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                  </section>
+                  <section class="col-md-8 col-sm-6">
+                    <div class="row">
+                            <div class="col-md-4 card">
+                              <a href="#" class="image-link">
+                                <div class="thumbnail">
+                                    <img alt="" src="http://placehold.it/900x400">
+                                    <span class="overlay"><span class="fa fa-search"></span></span>
+                                    <div class="card-icon">
+                                        <i class="ion-eye icon bg-aqua"></i>
+                                  </div>
+                                    <div class="caption">
+                                        <h3>Wiley</h3>
+                                        <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 card">
+                              <a href="#" class="image-link">
+                                <div class="thumbnail">
+                                    <img alt="" src="http://placehold.it/900x400">
+                                    <span class="overlay"><span class="fa fa-search"></span></span>
+                                    <div class="card-icon">
+                                        <i class="ion-eye icon bg-aqua"></i>
+                                  </div>
+                                    <div class="caption">
+                                        <h3>Wiley</h3>
+                                        <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 card">
+                              <a href="#" class="image-link">
+                                <div class="thumbnail">
+                                    <img alt="" src="http://placehold.it/900x400">
+                                    <span class="overlay"><span class="fa fa-search"></span></span>
+                                    <div class="card-icon">
+                                        <i class="ion-eye icon bg-aqua"></i>
+                                  </div>
+                                    <div class="caption">
+                                        <h3>Wiley</h3>
+                                        <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row">
+                                  <div class="col-md-4 card">
+                                    <a href="#" class="image-link">
+                                      <div class="thumbnail">
+                                          <img alt="" src="http://placehold.it/900x400">
+                                          <span class="overlay"><span class="fa fa-search"></span></span>
+                                          <div class="card-icon">
+                                              <i class="ion-eye icon bg-aqua"></i>
+                                        </div>
+                                          <div class="caption">
+                                              <h3>Wiley</h3>
+                                              <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="col-md-4 card">
+                                    <a href="#" class="image-link">
+                                      <div class="thumbnail">
+                                          <img alt="" src="http://placehold.it/900x400">
+                                          <span class="overlay"><span class="fa fa-search"></span></span>
+                                          <div class="card-icon">
+                                              <i class="ion-eye icon bg-aqua"></i>
+                                        </div>
+                                          <div class="caption">
+                                              <h3>Wiley</h3>
+                                              <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="col-md-4 card">
+                                    <a href="#" class="image-link">
+                                      <div class="thumbnail">
+                                          <img alt="" src="http://placehold.it/900x400">
+                                          <span class="overlay"><span class="fa fa-search"></span></span>
+                                          <div class="card-icon">
+                                              <i class="ion-eye icon bg-aqua"></i>
+                                        </div>
+                                          <div class="caption">
+                                              <h3>Wiley</h3>
+                                              <p>Une nouvelle ressource disponible dans le cadre d'ISTEX</p>
+                                          </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                        </section>
+                        </div>
+
+
+
+                </div>
+
+
+
+          <!-- =========================================================== -->
+      </section>
+
+      <!-- <section class="content-header">
+      <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
+      <li class="active">Ici</li>
+    </ol>
+  </section> -->
+</div><!-- /.content-wrapper -->
+
+<!-- Main Footer -->
+<footer class="main-footer bg-black">
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+    Université Rennes 2
+  </div>
+  <!-- Default to the left -->
+  <div class="address">
+    <strong>Bibliothèques de l'Université Rennes 2</strong><br>
+    Place du Recteur Henri Le Moal <br>
+    CS 64302<br>
+    35 043 Rennes cedex
+  </div>
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-light">
+  <!-- Create the tabs -->
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <!-- Home tab content -->
+    <div class="tab-pane active" id="control-sidebar-home-tab">
+      <ul class="control-sidebar-menu">
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>Bibliothèque Centrale</h4>
+              <p><strong><i class="fa fa-clock-o"></i> 8:30 - 20:00</strong></p>
+              <p class="location-info"><i class="fa fa-map-marker"></i> Villejean, Bat. H</p>
+              <p class="phone-info"><i class="fa fa-phone"></i> 02 99 14 12 75</p>
+            </div>
+          </a>
+        </li><!-- end message -->
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque d'APS
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:00</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> La Harpe, Bat. 54
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 16 71
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-close-outline bg-red"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque d'Anglais
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> Fermée</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villejean, Bat. E
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 16 15
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque d'ALC
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:00</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villejean, Bat. B
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 15 87
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque de Musique
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:30</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villjean, Bat. O
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 20 11
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque de Sciences Humaines
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:30</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villejean, Bat. S
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 19 14
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque de Sciences Sociales
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:30</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villejean, Bat. B
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 17 95
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Médiathèque
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:30</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Villejean, Bat. L
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 99 14 12 77
+              </p>
+            </div>
+          </a>
+        </li>
+        <li><!-- start message -->
+          <a href="#">
+            <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
+              <div class='menu-info'>
+              <h4 class='control-sidebar-subheading'>
+                Bibliothèque du Campus Mazier
+              </h4>
+              <p><strong><i class="fa fa-clock-o"></i> 9:00 - 18:00</strong></p>
+              <p class="location-info">
+                <i class="fa fa-map-marker"></i> Campus Mazier
+              </p>
+              <p class="phone-info">
+                <i class="fa fa-phone"></i> 02 96 60 43 26
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul><!-- /.control-sidebar-menu -->
+    </div><!-- /.tab-pane -->
+  </div>
+</aside><!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+immediately after the control sidebar -->
+<div class='control-sidebar-bg'></div>
 
 </div><!-- ./wrapper -->
 

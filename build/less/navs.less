@@ -18,7 +18,7 @@
   > li.active > a,
   > li.active > a:hover,
     > li.active > a:focus {
-    background-color: #f4f4f4;
+    background-color: #E0E0E0;
     border-top-color: @light-blue;
     color: #444;
   }
@@ -26,9 +26,27 @@
     font-weight: 600;
   }
   > li > a:hover {
-    background-color: #f6f6f6;
+    background-color: @body-bg ;
   }
+  &.nav-pills-dark {
+    > li > a {
+      color: #FFF;
+    }
+    > li > a:hover {
+      color: @black;
+      background-color:@body-bg;
+    }
+    > li.active > a,
+    > li.active > a:hover,
+      > li.active > a:focus {
+      color: @black;
+    }
+  }
+
 }
+
+
+
 /* NAV STACKED */
 .nav-stacked {
   > li > a {
