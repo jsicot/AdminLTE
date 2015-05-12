@@ -3029,6 +3029,17 @@ table.text-center th {
   border-color: #8f0b00;
 }
 /*
+ * Component: Searchbar
+ * --------------------
+ */
+.searchbar .search-menu {
+  display: none;
+  padding: 0 !important;
+}
+.searchbar .search-submenu {
+  height: 220px;
+}
+/*
  * Page: Mailbox
  * -------------
  */

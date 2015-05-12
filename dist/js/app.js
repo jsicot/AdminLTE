@@ -115,7 +115,7 @@ $.AdminLTE.options = {
     purple: "#9C00A7",
     maroon: "#D81B60",
     black: "#333",
-    darkgray: "#666",  
+    darkgray: "#666",
     gray: "#EEE"
   },
   //The standard screen sizes that bootstrap uses.
@@ -702,3 +702,39 @@ function _init() {
     });
   };
 }(jQuery));
+
+/*
+ * SEARCHBAR SCRIPT
+ * -----------------------
+ *
+ */
+
+$(function() {
+	$('#search').focus(function() {
+		$('.searchbar .search-menu').slideDown();
+	});
+
+	$('#searchform').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('html').click(function() {
+		$('.searchbar .search-menu').slideUp();
+	});
+
+	$('.searchbar .search-menu .search-submenu input').change(function() {
+		if ($(this).is(':checked')) {
+			var currentDest = $(this).parents('.col-md-3')[0];
+			$('.searchbar .search-menu .search-submenu').each(function() {
+				if (this != currentDest) {
+					$(this).find('input').prop('checked', false);
+				}
+			});
+		}
+	});
+
+	$('.search-menu .search-submenu h4 a').click(function() {
+		$(this).parent().parent().find('input[type="checkbox"],input:first[type="radio"]').prop('checked', true).change();
+		return false;
+	});
+});

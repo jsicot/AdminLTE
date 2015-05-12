@@ -58,7 +58,7 @@ desired effect
     <header class="main-header">
 
       <!-- Logo -->
-      <a href="starter.html" class="logo">
+      <a href="/" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>BU</b></span>
         <!-- logo for regular state and mobile devices -->
@@ -363,13 +363,88 @@ desired effect
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <form class='search-form'>
-                  <div class='input-group col-md-8 col-md-offset-2'>
-                    <input type="text" name="search" class='form-control input-lg' placeholder="Rechercher"/>
+                <form id="searchform" action="" method="post" class="searchbar">
+                  <div class="input-group col-md-8 col-md-offset-2">
+                    <input type="text" placeholder="Rechercher" class="form-control input-lg" id="search" name="search">
                     <div class="input-group-btn">
-                      <button type="submit" name="submit" class="btn btn-lg btn-success btn-flat"><i class="fa fa-search"></i></button>
+                      <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                     </div>
-                  </div><!-- /.input-group -->
+                  </div>
+                  <div class="clearfix col-md-8 search-menu col-md-offset-2">
+                    <div class="col-md-3 search-submenu bg-gray">
+                      <h4><a href="">Dans nos collections</a></h4>
+                      <div>
+                        <input type="checkbox" name="collsearch" id="colllivre" checked="checked"/>
+                        <label for="colllivre">un livre</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="collsearch" id="collart" checked="checked" />
+                        <label for="collart">un article</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="collsearch" id="colldvd" checked="checked" />
+                        <label for="colldvd">un DVD</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="collsearch" id="collmus" checked="checked" />
+                        <label for="collmus">de la musique</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="collsearch" id="collbd" checked="checked" />
+                        <label for="collbd">une BD</label>
+                      </div>
+
+                    </div>
+                    <div class="col-md-3 search-submenu bg-gray">
+                      <h4><a href="">Sur le portail</a></h4>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portactu" />
+                        <label for="portactu">une actualité</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portevent" />
+                        <label for="portevent">un événement</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portbib1" />
+                        <label for="portbib1">une bibliothèque</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portbib2" />
+                        <label for="portbib2">un(e) bibliothécaire</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portserv" />
+                        <label for="portserv">un service</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="portsearch" id="portfaq" />
+                        <label for="portfaq">dans la FAQ</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 search-submenu bg-gray">
+                      <h4><a href="">Dans nos revues</a></h4>
+                      <div>
+                        <input type="checkbox" name="revsearch" id="revue" />
+                        <label for="revue">une revue</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 search-submenu bg-gray">
+                      <h4><a href="">Ailleurs</a></h4>
+                      <div>
+                        <input type="radio" name="othersearch" id="otherthese" />
+                        <label for="otherthese">une thèse sur theses.fr</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="othersearch" id="otherhal" />
+                        <label for="otherhal">une publication sur HAL</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="othersearch" id="otherguide" />
+                        <label for="otherguide">un guide</label>
+                      </div>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div><!-- /.col -->
@@ -422,79 +497,79 @@ desired effect
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa fa-stack-overflow"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Emprunter</span>
-                <span class="info-box-description">
-                  rendre un document
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa fa-stack-overflow"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Emprunter</span>
+                  <span class="info-box-description">
+                    rendre un document
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-android-checkbox-outline"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Réserver</span>
-                <span class="info-box-description">
-                  prolonger un document
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-android-checkbox-outline"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Réserver</span>
+                  <span class="info-box-description">
+                    prolonger un document
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-bag"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Suggérer</span>
-                <span class="info-box-description">
-                  un document
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-bag"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Suggérer</span>
+                  <span class="info-box-description">
+                    un document
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-android-share"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Faire venir</span>
-                <span class="info-box-description">
-                  un document
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-android-share"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Faire venir</span>
+                  <span class="info-box-description">
+                    un document
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-ios-people"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Travailler</span>
-                <span class="info-box-description">
-                  en groupe
-                </span>
-              </div><!-- /.info-box-content -->
-            </div><!-- /.info-box -->
-          </a>
+                <span class="info-box-icon"><i class="fa ion-ios-people"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Travailler</span>
+                  <span class="info-box-description">
+                    en groupe
+                  </span>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+            </a>
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-green">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-ios-printer"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Imprimer</span>
-                <span class="info-box-description">
-                  photocopier ou numériser
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-ios-printer"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Imprimer</span>
+                  <span class="info-box-description">
+                    photocopier ou numériser
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -505,231 +580,231 @@ desired effect
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <a href="#">
-              <span class="info-box-icon"><i class="fa fa-user  "></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Accéder</span>
-                <span class="info-box-description">
-                  à mon compte lecteur
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa fa-user  "></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Accéder</span>
+                  <span class="info-box-description">
+                    à mon compte lecteur
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <a href="#">
-              <span class="info-box-icon"><i class="fa fa-database"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Consulter</span>
-                <span class="info-box-description">
-                  une base de données
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa fa-database"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Consulter</span>
+                  <span class="info-box-description">
+                    une base de données
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <a href="#">
-              <span class="info-box-icon"><i class="fa fa-graduation-cap "></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Déposer</span>
-                <span class="info-box-description">
-                  ma thèse, mon mémoire
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa fa-graduation-cap "></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Déposer</span>
+                  <span class="info-box-description">
+                    ma thèse, mon mémoire
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-android-exit"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Obtenir</span>
-                <span class="info-box-description">
-                  un quitus
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-android-exit"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Obtenir</span>
+                  <span class="info-box-description">
+                    un quitus
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <a href="#">
-              <span class="info-box-icon"><i class="fa ion-calendar"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Demander</span>
-                <span class="info-box-description">
-                  un RDV avec un bibliothécaire
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+                <span class="info-box-icon"><i class="fa ion-calendar"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Demander</span>
+                  <span class="info-box-description">
+                    un RDV avec un bibliothécaire
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
-            <a href="#">
-              <span class="info-box-icon"><i class="fa fa-slideshare"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">S'inscrire</span>
-                <span class="info-box-description">
-                  à un atelier
-                </span>
-              </div><!-- /.info-box-content -->
-            </a>
+              <a href="#">
+                <span class="info-box-icon"><i class="fa fa-slideshare"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">S'inscrire</span>
+                  <span class="info-box-description">
+                    à un atelier
+                  </span>
+                </div><!-- /.info-box-content -->
+              </a>
             </div><!-- /.info-box -->
           </div><!-- /.col -->
         </div><!-- /.row -->
 
         <!-- =========================================================== -->
 
-          <div class="row ">
-            <section class="col-md-4 col-sm-6 text-center">
-                    <div class=" card">
-                      <a href="#" class="image-link">
-                        <div class="thumbnail">
-                            <img alt="" src="http://placehold.it/900x400">
-                            <span class="overlay"><span class="fa fa-search"></span></span>
-                            <div class="card-icon">
-                                <i class="ion-eye icon bg-green"></i>
-                          </div>
-                            <div class="caption">
-                                <h3>A contre courant !</h3>
-                                <p>Exposition sur les Justes allemands réalisée par le Musée juif de  [...]</p>
-                            </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="card">
-                      <a href="#" class="image-link">
-                        <div class="thumbnail">
-                            <img alt="" src="http://placehold.it/900x400">
-                            <span class="overlay"><span class="fa fa-search"></span></span>
-                            <div class="card-icon">
-                                <i class="ion-eye icon bg-aqua"></i>
-                          </div>
-                            <div class="caption">
-                                <h3>Lorem Ipsum</h3>
-                                <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                            </div>
-                        </div>
-                      </a>
-                    </div>
-                  </section>
-                  <section class="col-md-8 col-sm-6">
-                    <div class="row">
-                            <div class="col-md-4 card">
-                              <a href="#" class="image-link">
-                                <div class="thumbnail">
-                                    <img alt="" src="http://placehold.it/900x400">
-                                    <span class="overlay"><span class="fa fa-search"></span></span>
-                                    <div class="card-icon">
-                                        <i class="ion-eye icon bg-aqua"></i>
-                                  </div>
-                                    <div class="caption">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 card">
-                              <a href="#" class="image-link">
-                                <div class="thumbnail">
-                                    <img alt="" src="http://placehold.it/900x400">
-                                    <span class="overlay"><span class="fa fa-search"></span></span>
-                                    <div class="card-icon">
-                                        <i class="ion-eye icon bg-aqua"></i>
-                                  </div>
-                                    <div class="caption">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 card">
-                              <a href="#" class="image-link">
-                                <div class="thumbnail">
-                                    <img alt="" src="http://placehold.it/900x400">
-                                    <span class="overlay"><span class="fa fa-search"></span></span>
-                                    <div class="card-icon">
-                                        <i class="ion-eye icon bg-aqua"></i>
-                                  </div>
-                                    <div class="caption">
-                                        <h3>Lorem Ipsum</h3>
-                                        <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="row">
-                                  <div class="col-md-4 card">
-                                    <a href="#" class="image-link">
-                                      <div class="thumbnail">
-                                          <img alt="" src="http://placehold.it/900x400">
-                                          <span class="overlay"><span class="fa fa-search"></span></span>
-                                          <div class="card-icon">
-                                              <i class="ion-eye icon bg-aqua"></i>
-                                        </div>
-                                          <div class="caption">
-                                              <h3>Lorem Ipsum</h3>
-                                              <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                          </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col-md-4 card">
-                                    <a href="#" class="image-link">
-                                      <div class="thumbnail">
-                                          <img alt="" src="http://placehold.it/900x400">
-                                          <span class="overlay"><span class="fa fa-search"></span></span>
-                                          <div class="card-icon">
-                                              <i class="ion-eye icon bg-aqua"></i>
-                                        </div>
-                                          <div class="caption">
-                                              <h3>Lorem Ipsum</h3>
-                                              <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                          </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="col-md-4 card">
-                                    <a href="#" class="image-link">
-                                      <div class="thumbnail">
-                                          <img alt="" src="http://placehold.it/900x400">
-                                          <span class="overlay"><span class="fa fa-search"></span></span>
-                                          <div class="card-icon">
-                                              <i class="ion-eye icon bg-aqua"></i>
-                                        </div>
-                                          <div class="caption">
-                                              <h3>Lorem Ipsum</h3>
-                                              <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
-                                          </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                </div>
-                        </section>
-                        </div>
-
-
-
+        <div class="row ">
+          <section class="col-md-4 col-sm-6 text-center">
+            <div class=" card">
+              <a href="#" class="image-link">
+                <div class="thumbnail">
+                  <img alt="" src="http://placehold.it/900x400">
+                  <span class="overlay"><span class="fa fa-search"></span></span>
+                  <div class="card-icon">
+                    <i class="ion-eye icon bg-green"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>A contre courant !</h3>
+                    <p>Exposition sur les Justes allemands réalisée par le Musée juif de  [...]</p>
+                  </div>
                 </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="#" class="image-link">
+                <div class="thumbnail">
+                  <img alt="" src="http://placehold.it/900x400">
+                  <span class="overlay"><span class="fa fa-search"></span></span>
+                  <div class="card-icon">
+                    <i class="ion-eye icon bg-aqua"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>Lorem Ipsum</h3>
+                    <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="col-md-8 col-sm-6">
+            <div class="row">
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 card">
+                <a href="#" class="image-link">
+                  <div class="thumbnail">
+                    <img alt="" src="http://placehold.it/900x400">
+                    <span class="overlay"><span class="fa fa-search"></span></span>
+                    <div class="card-icon">
+                      <i class="ion-eye icon bg-aqua"></i>
+                    </div>
+                    <div class="caption">
+                      <h3>Lorem Ipsum</h3>
+                      <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
 
 
 
-          <!-- =========================================================== -->
-      </section>
+      </div>
 
-      <!-- <section class="content-header">
-      <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
-      <li class="active">Ici</li>
-    </ol>
-  </section> -->
+
+
+      <!-- =========================================================== -->
+    </section>
+
+    <!-- <section class="content-header">
+    <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
+    <li class="active">Ici</li>
+  </ol>
+</section> -->
 </div><!-- /.content-wrapper -->
 
 <!-- Main Footer -->
@@ -750,7 +825,6 @@ desired effect
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-light">
   <!-- Create the tabs -->
-
   <!-- Tab panes -->
   <div class="tab-content">
     <!-- Home tab content -->
@@ -759,7 +833,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>Bibliothèque Centrale</h4>
               <p><strong><i class="fa fa-clock-o"></i> 8:30 - 20:00</strong></p>
               <p class="location-info"><i class="fa fa-map-marker"></i> Villejean, Bat. H</p>
@@ -770,7 +844,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque d'APS
               </h4>
@@ -787,7 +861,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-close-outline bg-red"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque d'Anglais
               </h4>
@@ -804,7 +878,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque d'ALC
               </h4>
@@ -821,7 +895,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque de Musique
               </h4>
@@ -838,7 +912,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque de Sciences Humaines
               </h4>
@@ -855,7 +929,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque de Sciences Sociales
               </h4>
@@ -872,7 +946,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Médiathèque
               </h4>
@@ -889,7 +963,7 @@ desired effect
         <li><!-- start message -->
           <a href="#">
             <i class="menu-icon fa-2x ion-ios-checkmark-outline bg-green"></i>
-              <div class='menu-info'>
+            <div class='menu-info'>
               <h4 class='control-sidebar-subheading'>
                 Bibliothèque du Campus Mazier
               </h4>
