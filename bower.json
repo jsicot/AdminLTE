@@ -29,6 +29,9 @@
     "node_modules",
     "bower_components",
     "composer.json",
-    "documentation"
+    "documentation",
+    "**/.*",
+    "test",
+    "tests"
   ]
 }
