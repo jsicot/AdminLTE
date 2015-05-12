@@ -17,7 +17,7 @@ module.exports = function (grunt) {
           compress: false
         },
         files: {
-          // compilation.css  :  source.less          
+          // compilation.css  :  source.less
           "dist/css/AdminLTE.css": "build/less/AdminLTE.less",
           //Non minified skin files
           "dist/css/skins/skin-blue.css": "build/less/skins/skin-blue.less",
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
       // Production compresses version
       production: {
         options: {
-          // Whether to compress or not          
+          // Whether to compress or not
           compress: true
         },
         files: {
@@ -69,15 +69,17 @@ module.exports = function (grunt) {
       },
       my_target: {
         files: {
-          'dist/js/app.min.js': ['dist/js/app.js']
+          'dist/js/app.min.js': ['dist/js/app.js'],
+          'dist/js/custom.min.js': ['dist/js/custom.js']
+
         }
       }
     },
     // Build the documentation files
     includes: {
       build: {
-        src: ['*.html'], // Source files 
-        dest: 'documentation/', // Destination directory 
+        src: ['*.html'], // Source files
+        dest: 'documentation/', // Destination directory
         flatten: true,
         cwd: 'documentation/build',
         options: {
