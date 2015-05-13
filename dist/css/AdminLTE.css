@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,700italic,900,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,700,700italic,800,600);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
 /*!
  *   AdminLTE v2.1.0
  *   Author: Almsaeed Studio
@@ -2059,24 +2058,27 @@ a:focus {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     display: none;
-    left: 0;
     position: absolute;
     text-align: center;
     top: 0;
-    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    left: 15px;
+    right: 15px;
     height: 90px;
+    color: #ffffff;
     z-index: 2;
   }
   .info-box .overlay .overlay-label {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    position: relative;
-    text-align: center;
-    top: 38%;
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .info-box:hover .overlay {
     display: block;
@@ -3059,6 +3061,7 @@ table.text-center th {
 }
 .news .card {
   padding: 0!important;
+  transition: all 0.5s ease 0s;
 }
 .news .card .thumbnail {
   display: block;
@@ -3066,6 +3069,7 @@ table.text-center th {
   margin-bottom: 0!important;
   border-radius: 0!important;
   padding: 0!important;
+  min-height: 330px;
 }
 .news .card .thumbnail .thumbnail img {
   border-bottom: 1px solid #f3f3f3;
@@ -3096,36 +3100,38 @@ table.text-center th {
 .news .card .thumbnail:hover .overlay {
   display: block;
 }
-.news .card .card-icon {
-  left: 50%;
-  margin-left: -35px;
-  position: absolute;
-  text-align: center;
-  bottom: 85px;
+.news .card .caption h3 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.news .card .caption p {
+  color: #7a8387;
+  font-size: 14px;
+  padding: 0 10px 0px;
 }
 .news .card .card-icon .icon {
-  border: 5px solid white;
+  border: 3px solid #fff;
   border-radius: 50%;
-  color: white;
-  display: inline-block;
-  font-size: 45px;
   height: 70px;
-  line-height: 60px;
+  font-size: 45px;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 20px;
   width: 70px;
 }
-.news .card .card-icon.card-icon-md {
-  bottom: 120px;
-  margin-left: -25px;
-}
 .news .card .card-icon.card-icon-md .icon {
-  border: 3px solid white;
-  border-radius: 50%;
-  color: white;
-  display: inline-block;
+  width: 40px;
+  height: 40px;
   font-size: 25px;
-  height: 50px;
-  line-height: 45px;
-  width: 50px;
+}
+.news .card:hover {
+  transform: translate(0px, -15px);
 }
 /*
  * Page: Mailbox
