@@ -135,9 +135,15 @@ h6,
   font-family: @font-family-base;
   font-weight: @headings-font-weight;
   &.logo {
+    font-size: 55px;
     font-family: @font-family-pochoir!important;
     letter-spacing: 0.05em;
-
+    line-height: 1;
+    margin: 10px 0 15px;
+    text-shadow: 4px 3px 0 @darkgray, 9px 8px 0 fadeout(lighten(@black, 10%), 80%);
+    @media (max-width: @screen-xs-max) {
+      font-size: 35px;
+    }
   }
 }
 /* General Links */

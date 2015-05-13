@@ -53,6 +53,7 @@
 .bg-purple,
 .bg-maroon,
 .bg-black,
+.bg-darkgray,
 .bg-red-active,
 .bg-yellow-active,
 .bg-aqua-active,
@@ -79,6 +80,9 @@
 .bg-gray {
   color: #000;
   background-color: @gray!important;
+}
+.bg-darkgray {
+  background-color: @darkgray!important;
 }
 .bg-black {
   background-color: @black!important;
@@ -130,6 +134,10 @@
 .bg-gray-active {
   color: #000;
   background-color: darken(@gray,10%)!important;
+}
+.bg-darkgray-active {
+  color: #000;
+  background-color: darken(@darkgray,10%)!important;
 }
 .bg-black-active {
   background-color: darken(@black, 10%)!important;
@@ -206,6 +214,9 @@
 }
 .text-gray {
   color: @gray !important;
+}
+.text-darkgray {
+  color: @darkgray !important;
 }
 .text-navy {
   color: @navy !important;
