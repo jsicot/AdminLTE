@@ -962,13 +962,13 @@ a:focus {
 }
 .navbar-nav > .notifications-menu,
 .navbar-nav > .messages-menu,
-.navbar-nav > .hours-menu,
+.navbar-nav > .calendar-menu,
 .navbar-nav > .ubib-menu {
   position: relative;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu,
 .navbar-nav > .messages-menu > .dropdown-menu,
-.navbar-nav > .hours-menu > .dropdown-menu,
+.navbar-nav > .calendar-menu > .dropdown-menu,
 .navbar-nav > .ubib-menu > .dropdown-menu {
   width: 330px;
   padding: 0 0 0 0!important;
@@ -977,13 +977,13 @@ a:focus {
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li,
 .navbar-nav > .messages-menu > .dropdown-menu > li,
-.navbar-nav > .hours-menu > .dropdown-menu > li,
+.navbar-nav > .calendar-menu > .dropdown-menu > li,
 .navbar-nav > .ubib-menu > .dropdown-menu > li {
   position: relative;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li.header,
 .navbar-nav > .messages-menu > .dropdown-menu > li.header,
-.navbar-nav > .hours-menu > .dropdown-menu > li.header,
+.navbar-nav > .calendar-menu > .dropdown-menu > li.header,
 .navbar-nav > .ubib-menu > .dropdown-menu > li.header {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -997,7 +997,7 @@ a:focus {
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,
 .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,
-.navbar-nav > .hours-menu > .dropdown-menu > li.footer > a,
+.navbar-nav > .calendar-menu > .dropdown-menu > li.footer > a,
 .navbar-nav > .ubib-menu > .dropdown-menu > li.footer > a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1013,7 +1013,7 @@ a:focus {
 @media (max-width: 991px) {
   .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,
   .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,
-  .navbar-nav > .hours-menu > .dropdown-menu > li.footer > a,
+  .navbar-nav > .calendar-menu > .dropdown-menu > li.footer > a,
   .navbar-nav > .ubib-menu > .dropdown-menu > li.footer > a {
     background: #fff!important;
     color: #444!important;
@@ -1021,14 +1021,14 @@ a:focus {
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a:hover,
 .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a:hover,
-.navbar-nav > .hours-menu > .dropdown-menu > li.footer > a:hover,
+.navbar-nav > .calendar-menu > .dropdown-menu > li.footer > a:hover,
 .navbar-nav > .ubib-menu > .dropdown-menu > li.footer > a:hover {
   text-decoration: none;
   font-weight: normal;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu,
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu,
 .navbar-nav > .ubib-menu > .dropdown-menu > li .menu {
   max-height: 200px;
   margin: 0;
@@ -1038,7 +1038,7 @@ a:focus {
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a,
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a,
 .navbar-nav > .ubib-menu > .dropdown-menu > li .menu > li > a {
   display: block;
   white-space: nowrap;
@@ -1047,10 +1047,13 @@ a:focus {
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a:hover,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a:hover,
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a:hover,
 .navbar-nav > .ubib-menu > .dropdown-menu > li .menu > li > a:hover {
   background: #f4f4f4;
   text-decoration: none;
+}
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a {
+  white-space: normal !important;
 }
 .navbar-nav > .ubib-menu > .dropdown-menu {
   width: 192px;
@@ -1068,18 +1071,18 @@ a:focus {
   width: 20px;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a {
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a {
   margin: 0px;
   padding: 10px 10px;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > div > img,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a > div > img {
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a > div > img {
   margin: auto 10px auto auto;
   width: 40px;
   height: 40px;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a > h4 {
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a > h4 {
   padding: 0;
   margin: 0 0 0 45px;
   color: #444444;
@@ -1087,28 +1090,27 @@ a:focus {
   position: relative;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4 > small,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a > h4 > small {
-  color: #999999;
-  font-size: 15px;
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a > h4 > small {
+  font-size: 13px;
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 0px;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a > p {
-  margin: 0 0 0 45px;
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a > p {
+  margin: 3px 0 3px 50px;
   font-size: 12px;
   color: #888888;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:before,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a:before,
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a:before,
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a:after {
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a:after {
   content: " ";
   display: table;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after,
-.navbar-nav > .hours-menu > .dropdown-menu > li .menu > li > a:after {
+.navbar-nav > .calendar-menu > .dropdown-menu > li .menu > li > a:after {
   clear: both;
 }
 .navbar-nav > .ubib-menu > .dropdown-menu > li .menu > li > a {
@@ -2049,7 +2051,7 @@ a:focus {
     position: absolute;
     text-align: center;
     top: 0;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     left: 15px;
     right: 15px;
@@ -5910,6 +5912,57 @@ fieldset[disabled] .btn-vk.active {
 }
 .text-white {
   color: #FFF !important;
+}
+.border-gray {
+  border-top: 3px solid #eeeeee !important;
+}
+.border-darkgray {
+  border-top: 3px solid #666666 !important;
+}
+.border-black {
+  border-top: 3px solid #333333 !important;
+}
+.border-red {
+  border-top: 3px solid #c20f00 !important;
+}
+.border-yellow {
+  border-top: 3px solid #d98e21 !important;
+}
+.border-aqua {
+  border-top: 3px solid #3274c6 !important;
+}
+.border-blue {
+  border-top: 3px solid #0073b7 !important;
+}
+.border-light-blue {
+  border-top: 3px solid #3c8dbc !important;
+}
+.border-green {
+  border-top: 3px solid #008a0c !important;
+}
+.border-navy {
+  border-top: 3px solid #000aa7 !important;
+}
+.border-teal {
+  border-top: 3px solid #39cccc !important;
+}
+.border-olive {
+  border-top: 3px solid #3d9970 !important;
+}
+.border-lime {
+  border-top: 3px solid #01ff70 !important;
+}
+.border-orange {
+  border-top: 3px solid #cd5813 !important;
+}
+.border-fuchsia {
+  border-top: 3px solid #ad3376 !important;
+}
+.border-purple {
+  border-top: 3px solid #9c00a7 !important;
+}
+.border-maroon {
+  border-top: 3px solid #d81b60 !important;
 }
 .hide {
   display: none !important;

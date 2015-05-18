@@ -31,7 +31,7 @@
 
 .navbar-nav > .notifications-menu,
 .navbar-nav > .messages-menu,
-.navbar-nav > .hours-menu,
+.navbar-nav > .calendar-menu,
 .navbar-nav > .ubib-menu {
   position: relative;
   //fix width and padding
@@ -96,6 +96,14 @@
   }
 }
 
+.navbar-nav > .calendar-menu {
+  > .dropdown-menu > li .menu {
+    > li > a {
+      white-space: normal !important;
+    }
+  }
+}
+
 .navbar-nav > .ubib-menu > .dropdown-menu {
   width: 192px;
 }
@@ -122,7 +130,7 @@
 }
 
 //Messages menu
-.navbar-nav > .messages-menu,.navbar-nav > .hours-menu {
+.navbar-nav > .messages-menu,.navbar-nav > .calendar-menu {
   //Inner menu
   > .dropdown-menu > li .menu {
     // Messages menu item
@@ -145,16 +153,15 @@
         position: relative;
         // Small for message time display
         > small {
-          color: #999999;
-          font-size: 15px;
+          font-size: 13px;
           position: absolute;
-          top: 30px;
+          top: 40px;
           right: 0px;
         }
       }
 
       > p {
-        margin: 0 0 0 45px;
+        margin: 3px 0 3px 50px;
         font-size: 12px;
         color: #888888;
       }
