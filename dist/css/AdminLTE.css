@@ -115,11 +115,18 @@ body {
 .main-footer {
   background: #fff;
   padding: 15px 15px 0 15px;
-  color: #444;
-  border-top: 1px solid #eeeeee;
+}
+.main-footer h3 {
+  font-weight: 300 !important;
+}
+.main-footer a {
+  color: #eeeeee;
 }
 .main-footer .nav-footer {
   display: inline-block;
+}
+.main-footer .social-links a {
+  color: #444;
 }
 /* Fixed layout */
 .fixed .main-header,
@@ -2486,14 +2493,22 @@ a:focus {
 .nav-pills.nav-pills-dark > li > a {
   color: #FFF;
 }
-.nav-pills.nav-pills-dark > li > a:hover {
+.nav-pills.nav-pills-dark > li > a:hover,
+.nav-pills.nav-pills-dark > li > a:focus {
   color: #333333;
-  background-color: #f3f3f3;
+  background-color: #FFF;
 }
 .nav-pills.nav-pills-dark > li.active > a,
-.nav-pills.nav-pills-dark > li.active > a:hover,
-.nav-pills.nav-pills-dark > li.active > a:focus {
+.nav-pills.nav-pills-dark > li.active > a:focus,
+.nav-pills.nav-pills-dark > li.active > a:hover {
   color: #333333;
+  background-color: #FFF;
+}
+.nav-pills.nav-footer > li > a:hover,
+.nav-pills.nav-footer > li > a:focus {
+  color: #FFF;
+  background: none !important;
+  text-decoration: underline !important;
 }
 /* NAV STACKED */
 .nav-stacked > li > a {

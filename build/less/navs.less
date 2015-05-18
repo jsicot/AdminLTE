@@ -38,14 +38,24 @@
     > li > a {
       color: #FFF;
     }
-    > li > a:hover {
+    > li > a:hover,
+    > li > a:focus,  {
       color: @black;
-      background-color:@body-bg;
+      background-color: #FFF;
     }
     > li.active > a,
-    > li.active > a:hover,
-      > li.active > a:focus {
-      color: @black;
+     > li.active > a:focus,
+      > li.active > a:hover {
+        color: @black;
+        background-color: #FFF;
+    }
+  }
+  &.nav-footer {
+    > li > a:hover,
+    > li > a:focus,  {
+      color: #FFF;
+      background: none !important;
+      text-decoration: underline !important;
     }
   }
 }
