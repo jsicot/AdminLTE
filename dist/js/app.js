@@ -10,7 +10,7 @@
  * @version 2.1.0
  * @license MIT <http://opensource.org/licenses/MIT>
  */
-
+ 
 'use strict';
 
 //Make sure jQuery has been loaded before app.js

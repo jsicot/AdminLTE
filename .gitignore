@@ -3,6 +3,7 @@
 /nbproject/private/
 /nbproject/
 /node_modules/
+/bower_components/
 TODO
 *.zip
 test.html
