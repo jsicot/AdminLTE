@@ -68,8 +68,8 @@
     float: left;
     background-color: transparent;
     background-image: none;
-    font-size: 16px;
-    padding: 16px 18px;
+    font-size: 19px;
+    padding: 15px 17px;
     //Add the fontawesome bars icon
     font-family: fontAwesome;
     &:before {
@@ -137,15 +137,18 @@
       margin-right: -15px;
       z-index: 2000;
       text-shadow: 4px 3px 0 @green, 9px 8px 0 fadeout(lighten(@black, 10%), 80%);
-      @media (min-width: @screen-sm-min) {
-        font-size: 30px;
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        font-size: 25px;
+        left: 35%;
         position: absolute;
-        left: 40%;
         text-shadow: 4px 3px 0 @darkgray, 9px 8px 0 fadeout(lighten(@black, 10%), 80%);
-
-
       }
-
+      @media (min-width: @screen-md-min) {
+        font-size: 30px;
+        left: 40%;
+        position: absolute;
+        text-shadow: 4px 3px 0 @darkgray, 9px 8px 0 fadeout(lighten(@black, 10%), 80%);
+      }
     }
   }
 

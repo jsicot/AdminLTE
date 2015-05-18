@@ -114,9 +114,12 @@ body {
 }
 .main-footer {
   background: #fff;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
   color: #444;
   border-top: 1px solid #eeeeee;
+}
+.main-footer .nav-footer {
+  display: inline-block;
 }
 /* Fixed layout */
 .fixed .main-header,
@@ -256,8 +259,8 @@ a:focus {
   float: left;
   background-color: transparent;
   background-image: none;
-  font-size: 16px;
-  padding: 16px 18px;
+  font-size: 19px;
+  padding: 15px 17px;
   font-family: fontAwesome;
 }
 .main-header .sidebar-toggle:before {
@@ -313,11 +316,19 @@ a:focus {
   z-index: 2000;
   text-shadow: 4px 3px 0 #008a0c, 9px 8px 0 rgba(77, 77, 77, 0.2);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-header .logo .header-logo {
+    font-size: 25px;
+    left: 35%;
+    position: absolute;
+    text-shadow: 4px 3px 0 #666666, 9px 8px 0 rgba(77, 77, 77, 0.2);
+  }
+}
+@media (min-width: 992px) {
   .main-header .logo .header-logo {
     font-size: 30px;
-    position: absolute;
     left: 40%;
+    position: absolute;
     text-shadow: 4px 3px 0 #666666, 9px 8px 0 rgba(77, 77, 77, 0.2);
   }
 }
@@ -2477,6 +2488,7 @@ a:focus {
 }
 .nav-pills.nav-pills-dark > li > a:hover {
   color: #333333;
+  background-color: #f3f3f3;
 }
 .nav-pills.nav-pills-dark > li.active > a,
 .nav-pills.nav-pills-dark > li.active > a:hover,
