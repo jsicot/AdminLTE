@@ -246,13 +246,126 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="row">
             <div class="col-md-12">
               <div class="row">
+
+
+
                 <form id="searchform" action="" method="post" class="searchbar">
-                  <div class="input-group col-md-8 col-md-offset-2">
-                    <input type="text" placeholder="Rechercher" class="form-control input-lg" id="search" name="search">
-                    <div class="input-group-btn">
-                      <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+
+                    <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="combined">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un livre, un article, un DVD..." class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <div role="tabpanel" class="tab-pane fade" id="books">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un livre, une bd" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="articles">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un article de revue" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="journals">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un titre de revue" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="thesis">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher une thèse" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="books">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un livre, une bd" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="oa">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher une publication déposer en archives ouvertes" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="movies">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un DVD" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="music">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un CD, une partition, un vinyl" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="books">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un livre, une bd" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="databases">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher une ressource, une base de données" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher une actualité, un événement" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="services">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un service" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="librarians">
+                      <div class="input-group col-md-8 col-md-offset-2">
+                        <input type="text" placeholder="Rechercher un bibliothécaire, un contact" class="form-control input-lg" id="search" name="search">
+                        <div class="input-group-btn">
+                          <button class="btn btn-lg btn-success btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
                 </form>
               </div>
             </div><!-- /.col -->
@@ -270,18 +383,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="scroller arrow-right"><i class="fa fa-arrow-right"></i></div> -->
               <div class="horizontal-tabs text-center">
                 <ul role="tablist" class="nav nav-pills nav-pills-dark nav-tabs-horizontal">
-                  <li role="presentation" ><a href="#" data-toggle="tab"><i class="fa icon-stack"></i></a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Livres</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Articles</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Revues</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Thèses</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Archives Ouvertes</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">DVD</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">CD, Partitions</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab">Bases de données</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab" class="">Actualités, Agenda</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab" class="">Services</a></li>
-                  <li role="presentation"><a href="#" data-toggle="tab" class="">Bibliothécaires</a></li>
+                  <li role="presentation" class="active"><a href="#combined" role="tab" aria-controls="combined" data-toggle="tab"><i class="fa icon-stack"></i></a></li>
+                  <li role="presentation"><a href="#books" role="tab" aria-controls="books" data-toggle="tab">Livres</a></li>
+                  <li role="presentation"><a href="#articles" role="tab" aria-controls="articles" data-toggle="tab">Articles</a></li>
+                  <li role="presentation"><a href="#journals" role="tab" aria-controls="journals" data-toggle="tab">Revues</a></li>
+                  <li role="presentation"><a href="#thesis" role="tab" aria-controls="thesis" data-toggle="tab">Thèses</a></li>
+                  <li role="presentation"><a href="#oa" role="tab" aria-controls="oa" data-toggle="tab">Archives Ouvertes</a></li>
+                  <li role="presentation"><a href="#movies" role="tab" aria-controls="movies" data-toggle="tab">DVD</a></li>
+                  <li role="presentation"><a href="#music" role="tab" aria-controls="music" data-toggle="tab">CD, Partitions</a></li>
+                  <li role="presentation"><a href="#databases" role="tab" aria-controls="databases" data-toggle="tab">Bases de données</a></li>
+                  <li role="presentation"><a href="#news" role="tab" aria-controls="news" data-toggle="tab" class="">Actualités, Agenda</a></li>
+                  <li role="presentation"><a href="#services" role="tab" aria-controls="services" data-toggle="tab" class="">Services</a></li>
+                  <li role="presentation"><a href="#librarians" role="tab" aria-controls="librarians" data-toggle="tab" class="">Bibliothécaires</a></li>
                 </ul>
               </div>
             </div>
@@ -296,32 +409,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="row">
             <div class="text-center">
               <ul class="nav nav-pills nav-pills-dark ">
-                <li role="presentation"><a href="#" data-toggle="tab"><i class="fa icon-stack"></i></a></li>
-                <li role="presentation"><a href="#" data-toggle="tab">Livres</a></li>
-                <li role="presentation"><a href="#" data-toggle="tab">Articles</a></li>
-                <li role="presentation" class="hidden-xs"><a href="#" data-toggle="tab">Revues</a></li>
-                <li role="presentation" class="hidden-xs" ><a href="#" data-toggle="tab">Thèses</a></li>
-                <li role="presentation" class="hidden-xs" ><a href="#" data-toggle="tab">Archives Ouvertes</a></li>
-                <li role="presentation" class="hidden-xs"><a href="#" data-toggle="tab">DVD</a></li>
-                <li role="presentation" class="hidden-xs"><a href="#" data-toggle="tab">CD, Partitions</a></li>
-                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#" data-toggle="tab">Bases de données</a></li>
-                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#" data-toggle="tab">Actualités, Agenda</a></li>
-                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#" data-toggle="tab">Services</a></li>
-                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#" data-toggle="tab">Bibliothécaires</a></li>
+                <li role="presentation" class="active"><a href="#combined" role="tab" aria-controls="combined" data-toggle="tab"><i class="fa icon-stack"></i></a></li>
+                <li role="presentation"><a href="#books" role="tab" aria-controls="books" data-toggle="tab">Livres</a></li>
+                <li role="presentation"><a href="#articles" role="tab" aria-controls="articles" data-toggle="tab">Articles</a></li>
+                <li role="presentation" class="hidden-xs"><a href="#journals" role="tab" aria-controls="journals" data-toggle="tab">Revues</a></li>
+                <li role="presentation" class="hidden-xs" ><a href="#thesis" role="tab" aria-controls="thesis" data-toggle="tab">Thèses</a></li>
+                <li role="presentation" class="hidden-xs" ><a href="#oa" role="tab" aria-controls="oa" data-toggle="tab">Archives Ouvertes</a></li>
+                <li role="presentation" class="hidden-xs"><a href="#movies" role="tab" aria-controls="movies" data-toggle="tab">DVD</a></li>
+                <li role="presentation" class="hidden-xs"><a href="#music" role="tab" aria-controls="music" data-toggle="tab">CD, Partitions</a></li>
+                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#databases" role="tab" aria-controls="database" data-toggle="tab">Bases de données</a></li>
+                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#news" role="tab" aria-controls="news" data-toggle="tab">Actualités, Agenda</a></li>
+                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#services" role="tab" aria-controls="services" data-toggle="tab">Services</a></li>
+                <li role="presentation" class="hidden-xs hidden-sm hidden-md"><a href="#librarians" role="tab" aria-controls="librarians" data-toggle="tab">Bibliothécaires</a></li>
                 <li role="presentation" class="dropdown visible-xs visible-sm visible-md" role="presentation">
                   <a aria-expanded="false" role="button" href="#" data-toggle="dropdown" class="dropdown-toggle">
                     <i class="fa ion-more"></i> <span class="caret"></span>
                   </a>
                   <ul role="menu" class="dropdown-menu">
-                    <li role="presentation" class="visible-xs hidden-sm hidden-md"><a href="#" data-toggle="tab">Revues</a></li>
-                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#" data-toggle="tab">Thèses</a></li>
-                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#" data-toggle="tab">Archives Ouvertes</a></li>
-                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#" data-toggle="tab">DVD</a></li>
-                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#" data-toggle="tab">CD, Partitions</a></li>
-                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#" data-toggle="tab">Bases de données</a></li>
-                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#" data-toggle="tab">Actualités, Agenda</a></li>
-                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#" data-toggle="tab">Services</a></li>
-                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#" data-toggle="tab">Bibliothécaires</a></li>
+                    <li role="presentation" class="visible-xs hidden-sm hidden-md"><a href="#journals" role="tab" aria-controls="journals" data-toggle="tab">Revues</a></li>
+                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#thesis" role="tab" aria-controls="thesis" data-toggle="tab">Thèses</a></li>
+                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#oa" role="tab" aria-controls="oa" data-toggle="tab">Archives Ouvertes</a></li>
+                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#movies" role="tab" aria-controls="movies" data-toggle="tab">DVD</a></li>
+                    <li role="presentation"><a class="visible-xs hidden-sm hidden-md" href="#music" role="tab" aria-controls="music" data-toggle="tab">CD, Partitions</a></li>
+                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#databases" role="tab" aria-controls="databases" data-toggle="tab">Bases de données</a></li>
+                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#news" role="tab" aria-controls="news" data-toggle="tab">Actualités, Agenda</a></li>
+                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#services" role="tab" aria-controls="services" data-toggle="tab">Services</a></li>
+                    <li role="presentation"><a class="visible-xs visible-sm visible-md" href="#librarians" role="tab" aria-controls="librarians" data-toggle="tab">Bibliothécaires</a></li>
                   </ul>
                 </li>
               </ul>
@@ -868,7 +981,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tab panes -->
   <div class="tab-content">
     <!-- Home tab content -->
-    <div class="tab-pane active" id="control-sidebar-home-tab">
+    <div class="tab-pane fade active" id="control-sidebar-home-tab">
       <ul class="control-sidebar-menu">
         <li><!-- start message -->
           <a href="#">

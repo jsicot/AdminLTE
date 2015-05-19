@@ -2505,6 +2505,7 @@ a:focus {
 .nav-pills.nav-pills-dark > li.active > a:hover {
   color: #333333;
   background-color: #FFF;
+  border-top-color: #008a0c;
 }
 .nav-pills.nav-footer > li > a:hover,
 .nav-pills.nav-footer > li > a:focus {
