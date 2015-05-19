@@ -3005,6 +3005,36 @@ table.text-center th {
   margin-top: -20px;
 }
 /*
+ * Owl Carousel
+ * -------------------
+ */
+.owl-carousel .item {
+  border-radius: 0.3rem;
+  float: left;
+  height: 25rem;
+  list-style-type: none;
+  margin: 0 1.2rem 1.2rem 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.owl-carousel .item img {
+  height: auto;
+  width: 100%;
+}
+.owl-carousel .caption {
+  background: #333333;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.owl-carousel .caption > .title > a {
+  font-weght: 300;
+  font-size: 14px;
+  color: #FFF;
+}
+/*
  * Component: modal
  * ----------------
  */

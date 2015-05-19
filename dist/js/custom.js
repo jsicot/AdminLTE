@@ -48,18 +48,16 @@
        margin: 10,
        videoHeight: 200,
        responsiveClass: true,
+       nav: false,
        responsive: {
          0: {
            items: 1,
-           nav: true
          },
          600: {
-           items: 3,
-           nav: false
+           items: 3
          },
          1000: {
            items: 6,
-           nav: false,
            loop: false,
            margin: 15
          }
