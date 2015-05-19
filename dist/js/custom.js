@@ -46,23 +46,24 @@
        stagePadding: 50,
        loop: true,
        margin: 10,
-       videoHeight: 200,
        responsiveClass: true,
        nav: false,
        responsive: {
          0: {
            items: 1,
          },
-         600: {
+         768: {
            items: 3
          },
-         1000: {
+         992: {
+           items: 4
+         },
+         1200: {
            items: 6,
-           loop: false,
            margin: 15
          }
        }
      })
    })
-
+   
 })(jQuery, $.AdminLTE);
