@@ -6469,6 +6469,54 @@ fieldset[disabled] .btn-vk.active {
   background-color: rgba(153, 107, 91, 0.5);
   color: #fff;
 }
+.bg-books-trans {
+  background-color: rgba(0, 189, 16, 0.5);
+  color: #fff;
+}
+.bg-articles-trans {
+  background-color: rgba(87, 143, 212, 0.5);
+  color: #fff;
+}
+.bg-oa-trans {
+  background-color: rgba(255, 126, 85, 0.5);
+  color: #fff;
+}
+.bg-guides-trans {
+  background-color: rgba(188, 55, 211, 0.5);
+  color: #fff;
+}
+.bg-journals-trans {
+  background-color: rgba(46, 188, 252, 0.5);
+  color: #fff;
+}
+.bg-thesis-trans {
+  background-color: rgba(61, 80, 197, 0.5);
+  color: #fff;
+}
+.bg-movies-trans {
+  background-color: rgba(164, 208, 112, 0.5);
+  color: #fff;
+}
+.bg-music-trans {
+  background-color: rgba(153, 107, 91, 0.5);
+  color: #fff;
+}
+.bg-databases-trans {
+  background-color: rgba(245, 19, 0, 0.5);
+  color: #fff;
+}
+.bg-news-trans {
+  background-color: rgba(0, 201, 182, 0.5);
+  color: #fff;
+}
+.bg-services-trans {
+  background-color: rgba(238, 76, 131, 0.5);
+  color: #fff;
+}
+.bg-librarians-trans {
+  background-color: rgba(255, 206, 58, 0.5);
+  color: #fff;
+}
 .bg-teal-gradient {
   background: #009688 !important;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #009688), color-stop(1, #00e8d2)) !important;
