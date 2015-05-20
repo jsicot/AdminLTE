@@ -62,7 +62,7 @@
 }
 .skin-red-light .content-wrapper,
 .skin-red-light .main-footer {
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #9e9e9e;
 }
 .skin-red-light .user-panel > .info,
 .skin-red-light .user-panel > .info > a {
@@ -113,7 +113,7 @@
 }
 .skin-red-light .sidebar-form {
   border-radius: 3px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #9e9e9e;
   margin: 10px 10px;
 }
 .skin-red-light .sidebar-form input[type="text"],
@@ -150,6 +150,6 @@
 }
 @media (min-width: 768px) {
   .skin-red-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
-    border-left: 1px solid #eeeeee;
+    border-left: 1px solid #9e9e9e;
   }
 }

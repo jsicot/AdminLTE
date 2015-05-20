@@ -42,28 +42,37 @@
    * -----------------------
    */
    $(function() {
+
      $('.owl-carousel').owlCarousel({
-       stagePadding: 50,
        loop: true,
        margin: 10,
        responsiveClass: true,
-       nav: false,
        responsive: {
          0: {
-           items: 1,
+           items: 3,
+           nav: false
          },
-         768: {
-           items: 3
+         600: {
+           items: 4,
+           nav: false,
+           margin: 40
          },
-         992: {
-           items: 4
-         },
-         1200: {
+         1000: {
            items: 6,
-           margin: 15
+           nav: false,
+           loop: false,
+           margin: 20
+         },
+         1350: {
+           items: 8,
+           nav: false,
+           loop: false,
+           margin: 20
          }
        }
      })
    })
-   
+
+
+
 })(jQuery, $.AdminLTE);

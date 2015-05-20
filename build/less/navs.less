@@ -37,6 +37,7 @@
   &.nav-pills-dark {
     > li > a {
       color: #FFF;
+      padding: 10px 13px !important;
     }
     > li > a:hover,
     > li > a:focus,  {
@@ -48,7 +49,43 @@
       > li.active > a:hover {
         color: @black;
         background-color: #FFF;
-        border-top-color: @green;
+        border-top-color: @black;
+        &.books {
+          border-top-color: @books;
+        }
+        &.articles {
+          border-top-color: @articles;
+        }
+        &.journals {
+          border-top-color: @journals;
+        }
+        &.thesis {
+          border-top-color: @thesis;
+        }
+        &.oa {
+          border-top-color: @oa;
+        }
+        &.movies {
+          border-top-color: @movies;
+        }
+        &.music {
+          border-top-color: @music;
+        }
+        &.databases {
+          border-top-color: @databases;
+        }
+        &.news {
+          border-top-color: @news;
+        }
+        &.guides {
+          border-top-color: @guides;
+        }
+        &.services {
+          border-top-color: @services;
+        }
+        &.librarians {
+          border-top-color: @librarians;
+        }
     }
   }
   &.nav-footer {

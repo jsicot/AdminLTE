@@ -10,7 +10,7 @@
  * @version 2.1.0
  * @license MIT <http://opensource.org/licenses/MIT>
  */
- 
+
 'use strict';
 
 //Make sure jQuery has been loaded before app.js
@@ -100,20 +100,20 @@ $.AdminLTE.options = {
   },
   //Define the set of colors to use globally around the website
   colors: {
-    lightBlue: "#3C8DBC",
+    lightBlue: "#00AEEF",
     red: "#C20F00",
     green: "#008a0c",
     aqua: "#3274c6",
-    yellow: "#D98E21",
-    blue: "#0073b7",
-    navy: "#000AA7",
-    teal: "#39CCCC",
-    olive: "#3D9970",
+    yellow: "#FED049",
+    blue: "#006EB6",
+    navy: "#49607E",
+    teal: "#7CCCBF",
+    olive: "#9CA011",
     lime: "#01FF70",
     orange: "#CD5813",
-    fuchsia: "#AD3376",
-    purple: "#9C00A7",
-    maroon: "#D81B60",
+    fuchsia: "#EC008B",
+    purple: "#6C5A97",
+    maroon: "#5F452D",
     black: "#333",
     darkgray: "#666",
     gray: "#EEE"
