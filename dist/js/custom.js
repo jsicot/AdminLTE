@@ -63,11 +63,17 @@
            loop: false,
            margin: 20
          },
-         1350: {
+         1400: {
            items: 8,
            nav: false,
            loop: false,
            margin: 20
+         },
+         1600: {
+           items: 10,
+           nav: false,
+           loop: false,
+           margin: 15
          }
        }
      })
