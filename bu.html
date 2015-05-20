@@ -68,7 +68,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li class="dropdown calendar-menu">
               <!-- Menu toggle button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa icon-calendar2"></i>
+                <i class="fa ion-ios-calendar"></i>
                 <span class="label label-info">8</span>
               </a>
               <ul class="dropdown-menu">
@@ -159,7 +159,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li class="dropdown notifications-menu">
               <!-- Menu toggle button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa icon-question"></i>
+                <i class="fa fa-question"></i>
               </a>
               <ul class="dropdown-menu">
                 <li class="header">Foire aux questions</li>
@@ -200,7 +200,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li class="dropdown ubib-menu">
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa icon-bubbles4"></i>
+                <i class="fa icon-bubbles"></i>
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -214,7 +214,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </ul>
             </li> <!-- end ubib -->
             <li>
-              <a data-toggle="control-sidebar" href="#"><i class="fa fa icon-library"></i></a>
+              <a data-toggle="control-sidebar" href="#"><i class="fa fa icon-clock2"></i></a>
             </li>
           </ul>
         </div>
@@ -241,114 +241,279 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
-      <section class="bg-custom">
-        <div class="padding-lg bg-black-trans">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-
-
-
-                <form id="searchform" action="" method="post" class="searchbar">
 
                     <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="combined">
+                          <section class="bg-custom">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un livre, un article, un DVD..." class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-combined btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="books">
+                          <section class="bg-books">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un livre, une bd" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-books btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="articles">
+                          <header class="searchbar bg-articles">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un article de revue" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-articles btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="journals">
+                          <section class="bg-journals">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un titre de revue" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-journals btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="thesis">
+                          <section class="bg-thesis">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher une thèse" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-thesis btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="oa">
+                          <section class="bg-oa">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher une publication déposer en archives ouvertes" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-oa btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="movies">
+                          <section class="bg-movies">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un DVD" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-movies btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="music">
+                          <section class="bg-music">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
-                        <input type="text" placeholder="Rechercher un CD, une partition, un vinyl" class="form-control input-lg" id="search" name="search">
+                        <input type="text" placeholder="Rechercher un CD, une partition, un vinyle" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-music btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="databases">
+                          <section class="bg-databases">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher une ressource, une base de données" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-databases btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="news">
+                          <section class="bg-news">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher une actualité, un événement" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-news btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="guides">
+                          <section class="bg-guides">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un guide" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-guides btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="services">
+                          <section class="bg-services">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un service" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
                           <button class="btn btn-lg btn-services btn-flat" name="submit" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                       </div>
+                      
+                </form>
+              </div>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.padding -->
+
+      </header>
                     </div>
                     <div role="tabpanel" class="tab-pane " id="librarians">
+                          <section class="bg-librarians">
+        <div class="padding-xl bg-black-trans">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <form id="searchform" action="" method="post" class="searchbar">
                       <div class="input-group col-md-8 col-md-offset-2">
                         <input type="text" placeholder="Rechercher un bibliothécaire, un contact" class="form-control input-lg" id="search" name="search">
                         <div class="input-group-btn">
@@ -356,15 +521,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                       </div>
                     </div>
-                </div>
-
+                    
                 </form>
               </div>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.padding -->
 
-      </section>
+      </header>
+                </div>
+
 
 
       <section class="bg-black visible-xs">
@@ -442,11 +608,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <div class="row">
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa ion-bag"></i></span>
+                <span class="info-box-icon bg-services-active"><i class="fa ion-bag"></i></span>
                 <span class="overlay"><span class="overlay-label">Suggérer un document</span></span>
-                <div class="info-box-content hidden-xs">
+                <div class="info-box-content text-black hidden-xs ">
                   <span class="info-box-text">Suggérer</span>
                   <span class="info-box-description">
                     un document
@@ -456,12 +622,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa ion-calendar"></i></span>
+                <span class="info-box-icon bg-services"><i class="fa ion-calendar"></i></span>
                 <span class="overlay"><span class="overlay-label">Demander un RDV avec un bibliothécaire</span></span>
-                <div class="info-box-content hidden-xs">
-                  <span class="info-box-text">Demander</span>
+                <div class="info-box-content text-black hidden-xs">
+                  <span class="info-box-text ">Demander</span>
                   <span class="info-box-description">
                     un RDV avec un bibliothécaire
                   </span>
@@ -470,12 +636,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa ion-android-checkbox-outline"></i></span>
+                <span class="info-box-icon bg-services-active"><i class="fa ion-android-checkbox-outline"></i></span>
                 <span class="overlay"><span class="overlay-label">Réserver, prolonger un document</span></span>
 
-                <div class="info-box-content hidden-xs">
+                <div class="info-box-content text-black hidden-xs ">
                   <span class="info-box-text">Réserver</span>
                   <span class="info-box-description">
                     prolonger un document
@@ -485,11 +651,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa ion-ios-film"></i></span>
+                <span class="info-box-icon bg-services-active"><i class="fa ion-ios-film"></i></span>
                 <span class="overlay"><span class="overlay-label">Visionner un film en ligne</span></span>
-                <div class="info-box-content hidden-xs">
+                <div class="info-box-content text-black hidden-xs ">
                   <span class="info-box-text">Visionner</span>
                   <span class="info-box-description">
                     un film en ligne
@@ -499,11 +665,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa icon-tab2"></i></span>
+                <span class="info-box-icon bg-services-active"><i class="fa icon-tab2"></i></span>
                 <span class="overlay"><span class="overlay-label">Faire venir un document</span></span>
-                <div class="info-box-content hidden-xs">
+                <div class="info-box-content text-black hidden-xs ">
                   <span class="info-box-text">Faire venir</span>
                   <span class="info-box-description">
                     un document
@@ -513,11 +679,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
-            <div class="info-box bg-services">
+            <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon"><i class="fa fa-slideshare"></i></span>
+                <span class="info-box-icon bg-services-active"><i class="fa fa-slideshare"></i></span>
                 <span class="overlay"><span class="overlay-label">S'inscrire à un atelier</span></span>
-                <div class="info-box-content hidden-xs">
+                <div class="info-box-content text-black hidden-xs ">
                   <span class="info-box-text">S'inscrire</span>
                   <span class="info-box-description">
                     à un atelier
@@ -539,7 +705,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#553057" class="popoverBtn" data-original-title="" title="">
             <img alt="Théorie des symboles" src="http://images.amazon.com/images/P/2020175908.01.LZZZZZZZ.jpg" title="Théorie des symboles">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Théorie des symboles</a>
               </div>
@@ -549,7 +715,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#553054" class="popoverBtn" data-original-title="" title="">
             <img alt="Leiris &amp; Co" src="http://images.amazon.com/images/P/207014772X.01.LZZZZZZZ.jpg" title="Leiris &amp; Co">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Leiris &amp; Co</a>
               </div>
@@ -559,7 +725,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#553052" class="popoverBtn" data-original-title="" title="">
             <img alt="La Fortune des Rougon" src="http://images.amazon.com/images/P/2070341429.01.LZZZZZZZ.jpg" title="La Fortune des Rougon">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">La Fortune des Rougon</a>
               </div>
@@ -569,7 +735,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552893" class="popoverBtn" data-original-title="" title="">
             <img alt="Dieux des Balkans" src="http://images.amazon.com/images/P/2854956044.01.LZZZZZZZ.jpg" title="Dieux des Balkans">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Dieux des Balkans</a>
               </div>
@@ -579,7 +745,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552892" class="popoverBtn" data-original-title="" title="">
             <img alt="Au nom de l'art, 1933-1945" src="http://images.amazon.com/images/P/2213680892.01.LZZZZZZZ.jpg" title="Au nom de l'art, 1933-1945">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Au nom de l'art, 1933-1945</a>
               </div>
@@ -589,7 +755,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552890" class="popoverBtn" data-original-title="" title="">
             <img alt="La fabrique des saintes images" src="http://images.amazon.com/images/P/2757209302.01.LZZZZZZZ.jpg" title="La fabrique des saintes images">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">La fabrique des saintes images</a>
               </div>
@@ -599,7 +765,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552757" class="popoverBtn" data-original-title="" title="">
             <img alt="Roman d'Eneas, La Boétie, Corneille, Marivaux, Baudelaire, Yourcenar" src="http://images.amazon.com/images/P/284050961X.01.LZZZZZZZ.jpg" title="Roman d'Eneas, La Boétie, Corneille, Marivaux, Baudelaire, Yourcenar">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Roman d'Eneas, La Boétie, Corneille, Marivaux, Baudelaire, Yourcenar</a>
               </div>
@@ -609,7 +775,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552756" class="popoverBtn" data-original-title="" title="">
             <img alt="Théorie de la fiction" src="http://images.amazon.com/images/P/234305973X.01.LZZZZZZZ.jpg" title="Théorie de la fiction">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Théorie de la fiction</a>
               </div>
@@ -619,7 +785,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552754" class="popoverBtn" data-original-title="" title="">
             <img alt="Game of thrones" src="http://images.amazon.com/images/P/2350961044.01.LZZZZZZZ.jpg" title="Game of thrones">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Game of thrones</a>
               </div>
@@ -629,7 +795,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552753" class="popoverBtn" data-original-title="" title="">
             <img alt="La composition française au CAPES de Lettres" src="http://images.amazon.com/images/P/2340005124.01.LZZZZZZZ.jpg" title="La composition française au CAPES de Lettres">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">La composition française au CAPES de Lettres</a>
               </div>
@@ -639,7 +805,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552752" class="popoverBtn" data-original-title="" title="">
             <img alt="Poussin et Louis XIV" src="http://images.amazon.com/images/P/2754108130.01.LZZZZZZZ.jpg" title="Poussin et Louis XIV">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Poussin et Louis XIV</a>
               </div>
@@ -649,7 +815,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#552647" class="popoverBtn" data-original-title="" title="">
             <img alt="Sociologie de la communication et des médias" src="http://images.amazon.com/images/P/2200278276.01.LZZZZZZZ.jpg" title="Sociologie de la communication et des médias">
             </a>
-            <div class="sub">
+            <div class="sub border-books">
               <div class="title">
                 <a href="#">Sociologie de la communication et des médias</a>
               </div>
@@ -691,7 +857,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <div class="card-icon card-icon-md">
                             <i class="ion-eye icon bg-news"></i>
                           </div>
-                          <div class="caption border-green">
+                          <div class="caption border-news">
                             <h3>Disponible en vinyle !</h3>
                             <p> Ennii quo qui quibus oderit fabulis spernat dicunt est spernat.</p>
                           </div>

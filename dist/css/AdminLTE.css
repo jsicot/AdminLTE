@@ -2103,7 +2103,7 @@ a:focus {
   }
 }
 .info-box-content {
-  padding: 15px 15px;
+  padding: 15px 25px;
   margin-left: 80px;
 }
 @media (min-width: 1200px) {
@@ -2121,11 +2121,15 @@ a:focus {
 .progress-description,
 .info-box-text {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.info-box-description {
+  font-weight: 600;
+  font-size: 13px;
 }
 .info-box-text {
   text-transform: uppercase;
@@ -2346,22 +2350,22 @@ a:focus {
   background-color: #2d68b2;
 }
 .btn-journals {
-  background-color: #303f9f;
-  border-color: #2a378b;
+  background-color: #03a9f4;
+  border-color: #0398db;
 }
 .btn-journals:hover,
 .btn-journals:active,
 .btn-journals.hover {
-  background-color: #2a378b;
+  background-color: #0398db;
 }
 .btn-thesis {
-  background-color: #ffc107;
-  border-color: #ecb100;
+  background-color: #303f9f;
+  border-color: #2a378b;
 }
 .btn-thesis:hover,
 .btn-thesis:active,
 .btn-thesis.hover {
-  background-color: #ecb100;
+  background-color: #2a378b;
 }
 .btn-oa {
   background-color: #ff5722;
@@ -2409,22 +2413,22 @@ a:focus {
   background-color: #d81557;
 }
 .btn-librarians {
-  background-color: #009688;
-  border-color: #007d71;
+  background-color: #ffc107;
+  border-color: #ecb100;
 }
 .btn-librarians:hover,
 .btn-librarians:active,
 .btn-librarians.hover {
-  background-color: #007d71;
+  background-color: #ecb100;
 }
 .btn-news {
-  background-color: #03a9f4;
-  border-color: #0398db;
+  background-color: #009688;
+  border-color: #007d71;
 }
 .btn-news:hover,
 .btn-news:active,
 .btn-news.hover {
-  background-color: #0398db;
+  background-color: #007d71;
 }
 .btn-guides {
   background-color: #9c27b0;
@@ -2639,12 +2643,12 @@ a:focus {
 .nav-pills.nav-pills-dark > li.active > a.journals,
 .nav-pills.nav-pills-dark > li.active > a:focus.journals,
 .nav-pills.nav-pills-dark > li.active > a:hover.journals {
-  border-top-color: #303f9f;
+  border-top-color: #03a9f4;
 }
 .nav-pills.nav-pills-dark > li.active > a.thesis,
 .nav-pills.nav-pills-dark > li.active > a:focus.thesis,
 .nav-pills.nav-pills-dark > li.active > a:hover.thesis {
-  border-top-color: #ffc107;
+  border-top-color: #303f9f;
 }
 .nav-pills.nav-pills-dark > li.active > a.oa,
 .nav-pills.nav-pills-dark > li.active > a:focus.oa,
@@ -2669,7 +2673,7 @@ a:focus {
 .nav-pills.nav-pills-dark > li.active > a.news,
 .nav-pills.nav-pills-dark > li.active > a:focus.news,
 .nav-pills.nav-pills-dark > li.active > a:hover.news {
-  border-top-color: #03a9f4;
+  border-top-color: #009688;
 }
 .nav-pills.nav-pills-dark > li.active > a.guides,
 .nav-pills.nav-pills-dark > li.active > a:focus.guides,
@@ -2684,7 +2688,7 @@ a:focus {
 .nav-pills.nav-pills-dark > li.active > a.librarians,
 .nav-pills.nav-pills-dark > li.active > a:focus.librarians,
 .nav-pills.nav-pills-dark > li.active > a:hover.librarians {
-  border-top-color: #009688;
+  border-top-color: #ffc107;
 }
 .nav-pills.nav-footer > li > a:hover,
 .nav-pills.nav-footer > li > a:focus {
@@ -3728,7 +3732,7 @@ table.text-center th {
   padding-right: 0;
 }
 .btn-bitbucket {
-  color: #ffffff;
+  color: white;
   background-color: #205081;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3738,7 +3742,7 @@ table.text-center th {
 .btn-bitbucket:active,
 .btn-bitbucket.active,
 .open > .dropdown-toggle.btn-bitbucket {
-  color: #ffffff;
+  color: white;
   background-color: #163758;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3770,10 +3774,10 @@ fieldset[disabled] .btn-bitbucket.active {
 }
 .btn-bitbucket .badge {
   color: #205081;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-dropbox {
-  color: #ffffff;
+  color: white;
   background-color: #1087dd;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3783,7 +3787,7 @@ fieldset[disabled] .btn-bitbucket.active {
 .btn-dropbox:active,
 .btn-dropbox.active,
 .open > .dropdown-toggle.btn-dropbox {
-  color: #ffffff;
+  color: white;
   background-color: #0d6aad;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3815,10 +3819,10 @@ fieldset[disabled] .btn-dropbox.active {
 }
 .btn-dropbox .badge {
   color: #1087dd;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-facebook {
-  color: #ffffff;
+  color: white;
   background-color: #3b5998;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3828,7 +3832,7 @@ fieldset[disabled] .btn-dropbox.active {
 .btn-facebook:active,
 .btn-facebook.active,
 .open > .dropdown-toggle.btn-facebook {
-  color: #ffffff;
+  color: white;
   background-color: #2d4373;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3860,10 +3864,10 @@ fieldset[disabled] .btn-facebook.active {
 }
 .btn-facebook .badge {
   color: #3b5998;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-flickr {
-  color: #ffffff;
+  color: white;
   background-color: #ff0084;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3873,7 +3877,7 @@ fieldset[disabled] .btn-facebook.active {
 .btn-flickr:active,
 .btn-flickr.active,
 .open > .dropdown-toggle.btn-flickr {
-  color: #ffffff;
+  color: white;
   background-color: #cc006a;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3905,10 +3909,10 @@ fieldset[disabled] .btn-flickr.active {
 }
 .btn-flickr .badge {
   color: #ff0084;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-foursquare {
-  color: #ffffff;
+  color: white;
   background-color: #0072b1;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3918,7 +3922,7 @@ fieldset[disabled] .btn-flickr.active {
 .btn-foursquare:active,
 .btn-foursquare.active,
 .open > .dropdown-toggle.btn-foursquare {
-  color: #ffffff;
+  color: white;
   background-color: #00517e;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3950,10 +3954,10 @@ fieldset[disabled] .btn-foursquare.active {
 }
 .btn-foursquare .badge {
   color: #0072b1;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-github {
-  color: #ffffff;
+  color: white;
   background-color: #444444;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3963,7 +3967,7 @@ fieldset[disabled] .btn-foursquare.active {
 .btn-github:active,
 .btn-github.active,
 .open > .dropdown-toggle.btn-github {
-  color: #ffffff;
+  color: white;
   background-color: #2b2b2b;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3995,10 +3999,10 @@ fieldset[disabled] .btn-github.active {
 }
 .btn-github .badge {
   color: #444444;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-google-plus {
-  color: #ffffff;
+  color: white;
   background-color: #dd4b39;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4008,7 +4012,7 @@ fieldset[disabled] .btn-github.active {
 .btn-google-plus:active,
 .btn-google-plus.active,
 .open > .dropdown-toggle.btn-google-plus {
-  color: #ffffff;
+  color: white;
   background-color: #c23321;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4040,10 +4044,10 @@ fieldset[disabled] .btn-google-plus.active {
 }
 .btn-google-plus .badge {
   color: #dd4b39;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-instagram {
-  color: #ffffff;
+  color: white;
   background-color: #3f729b;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4053,7 +4057,7 @@ fieldset[disabled] .btn-google-plus.active {
 .btn-instagram:active,
 .btn-instagram.active,
 .open > .dropdown-toggle.btn-instagram {
-  color: #ffffff;
+  color: white;
   background-color: #305777;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4085,10 +4089,10 @@ fieldset[disabled] .btn-instagram.active {
 }
 .btn-instagram .badge {
   color: #3f729b;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-linkedin {
-  color: #ffffff;
+  color: white;
   background-color: #007bb6;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4098,7 +4102,7 @@ fieldset[disabled] .btn-instagram.active {
 .btn-linkedin:active,
 .btn-linkedin.active,
 .open > .dropdown-toggle.btn-linkedin {
-  color: #ffffff;
+  color: white;
   background-color: #005983;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4130,10 +4134,10 @@ fieldset[disabled] .btn-linkedin.active {
 }
 .btn-linkedin .badge {
   color: #007bb6;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-tumblr {
-  color: #ffffff;
+  color: white;
   background-color: #2c4762;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4143,7 +4147,7 @@ fieldset[disabled] .btn-linkedin.active {
 .btn-tumblr:active,
 .btn-tumblr.active,
 .open > .dropdown-toggle.btn-tumblr {
-  color: #ffffff;
+  color: white;
   background-color: #1c2d3f;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4175,10 +4179,10 @@ fieldset[disabled] .btn-tumblr.active {
 }
 .btn-tumblr .badge {
   color: #2c4762;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-twitter {
-  color: #ffffff;
+  color: white;
   background-color: #55acee;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4188,7 +4192,7 @@ fieldset[disabled] .btn-tumblr.active {
 .btn-twitter:active,
 .btn-twitter.active,
 .open > .dropdown-toggle.btn-twitter {
-  color: #ffffff;
+  color: white;
   background-color: #2795e9;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4220,10 +4224,10 @@ fieldset[disabled] .btn-twitter.active {
 }
 .btn-twitter .badge {
   color: #55acee;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-vk {
-  color: #ffffff;
+  color: white;
   background-color: #587ea3;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4233,7 +4237,7 @@ fieldset[disabled] .btn-twitter.active {
 .btn-vk:active,
 .btn-vk.active,
 .open > .dropdown-toggle.btn-vk {
-  color: #ffffff;
+  color: white;
   background-color: #466482;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4265,7 +4269,7 @@ fieldset[disabled] .btn-vk.active {
 }
 .btn-vk .badge {
   color: #587ea3;
-  background-color: #ffffff;
+  background-color: white;
 }
 /*
  * Plugin: Full Calendar
@@ -6101,10 +6105,10 @@ fieldset[disabled] .btn-vk.active {
   background-color: #3274c6 !important;
 }
 .bg-journals {
-  background-color: #303f9f !important;
+  background-color: #03a9f4 !important;
 }
 .bg-thesis {
-  background-color: #ffc107 !important;
+  background-color: #303f9f !important;
 }
 .bg-oa {
   background-color: #ff5722 !important;
@@ -6119,13 +6123,13 @@ fieldset[disabled] .btn-vk.active {
   background-color: #8bc34a !important;
 }
 .bg-news {
-  background-color: #03a9f4 !important;
+  background-color: #009688 !important;
 }
 .bg-services {
   background-color: #e91e63 !important;
 }
 .bg-librarians {
-  background-color: #009688 !important;
+  background-color: #ffc107 !important;
 }
 .bg-guides {
   background-color: #9c27b0 !important;
@@ -6139,10 +6143,10 @@ fieldset[disabled] .btn-vk.active {
   background-color: #005708 !important;
 }
 .bg-journals-active {
-  background-color: #242f78 !important;
+  background-color: #0286c2 !important;
 }
 .bg-thesis-active {
-  background-color: #e7ae00 !important;
+  background-color: #293687 !important;
 }
 .bg-databases-active {
   background-color: #a30d00 !important;
@@ -6154,7 +6158,7 @@ fieldset[disabled] .btn-vk.active {
   background-color: #71a436 !important;
 }
 .bg-news-active {
-  background-color: #0394d6 !important;
+  background-color: #00776c !important;
 }
 .bg-services-active {
   background-color: #d81557 !important;
@@ -6163,7 +6167,7 @@ fieldset[disabled] .btn-vk.active {
   background-color: #9525a8 !important;
 }
 .bg-librarians-active {
-  background-color: #007d71 !important;
+  background-color: #ecb100 !important;
 }
 .bg-olive-active {
   background-color: #7eb73d !important;
@@ -6248,10 +6252,10 @@ fieldset[disabled] .btn-vk.active {
   color: #3274c6 !important;
 }
 .text-journals {
-  color: #303f9f !important;
+  color: #03a9f4 !important;
 }
 .text-thesis {
-  color: #ffc107 !important;
+  color: #303f9f !important;
 }
 .text-oa {
   color: #ff5722 !important;
@@ -6269,13 +6273,13 @@ fieldset[disabled] .btn-vk.active {
   color: #9c27b0 !important;
 }
 .text-news {
-  color: #03a9f4 !important;
+  color: #009688 !important;
 }
 .text-services {
   color: #e91e63 !important;
 }
 .text-librarians {
-  color: #009688 !important;
+  color: #ffc107 !important;
 }
 .border-books {
   border-top: 3px solid #008a0c !important;
@@ -6284,10 +6288,10 @@ fieldset[disabled] .btn-vk.active {
   border-top: 3px solid #3274c6 !important;
 }
 .border-journals {
-  border-top: 3px solid #303f9f !important;
+  border-top: 3px solid #03a9f4 !important;
 }
 .border-thesis {
-  border-top: 3px solid #ffc107 !important;
+  border-top: 3px solid #303f9f !important;
 }
 .border-databases {
   border-top: 3px solid #c20f00 !important;
@@ -6302,7 +6306,7 @@ fieldset[disabled] .btn-vk.active {
   border-top: 3px solid #795548 !important;
 }
 .border-news {
-  border-top: 3px solid #03a9f4 !important;
+  border-top: 3px solid #009688 !important;
 }
 .border-guides {
   border-top: 3px solid #9c27b0 !important;
@@ -6311,7 +6315,7 @@ fieldset[disabled] .btn-vk.active {
   border-top: 3px solid #e91e63 !important;
 }
 .border-librarians {
-  border-top: 3px solid #009688 !important;
+  border-top: 3px solid #ffc107 !important;
 }
 .border-gray {
   border-top: 3px solid #9e9e9e !important;
