@@ -21,7 +21,7 @@
 .owl-carousel{
 	margin: 30px 0 20px 0;
  .item {
-    border-radius: 0.3rem;
+    border-radius: 0.1rem;
     float: left;
     height: 20rem;
     @media (max-width: @screen-xs-max) {
@@ -39,9 +39,12 @@
       height: auto;
       width: 100%;
       }
+    &.thumbnail{
+	    border: none !important;
+    }
   }
   .sub {
-      background: #FFF;
+      background: #fff none repeat scroll 0 0;
       bottom: 0;
       left: 0;
       position: absolute;
