@@ -61,7 +61,7 @@
            items: 6,
            nav: false,
            loop: false,
-           margin: 20
+           margin: 30
          },
          1400: {
            items: 8,
@@ -73,7 +73,7 @@
            items: 10,
            nav: false,
            loop: false,
-           margin: 15
+           margin: 20
          }
        }
      })

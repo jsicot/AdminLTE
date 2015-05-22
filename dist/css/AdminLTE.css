@@ -3193,6 +3193,9 @@ table.text-center th {
  * Owl Carousel
  * -------------------
  */
+.owl-carousel {
+  margin: 30px 0 20px 0;
+}
 .owl-carousel .item {
   border-radius: 0.3rem;
   float: left;
@@ -3218,7 +3221,7 @@ table.text-center th {
   width: 100%;
 }
 .owl-carousel .sub {
-  background: #374046;
+  background: #FFF;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -3228,7 +3231,7 @@ table.text-center th {
 .owl-carousel .sub > .title > a {
   font-weght: 300;
   font-size: 14px;
-  color: #FFF;
+  color: #374046;
 }
 @media (max-width: 991px) {
   .owl-carousel .sub > .title > a {
@@ -3849,7 +3852,7 @@ table.text-center th {
   padding-right: 0;
 }
 .btn-bitbucket {
-  color: #ffffff;
+  color: white;
   background-color: #205081;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3859,7 +3862,7 @@ table.text-center th {
 .btn-bitbucket:active,
 .btn-bitbucket.active,
 .open > .dropdown-toggle.btn-bitbucket {
-  color: #ffffff;
+  color: white;
   background-color: #163758;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3891,10 +3894,10 @@ fieldset[disabled] .btn-bitbucket.active {
 }
 .btn-bitbucket .badge {
   color: #205081;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-dropbox {
-  color: #ffffff;
+  color: white;
   background-color: #1087dd;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3904,7 +3907,7 @@ fieldset[disabled] .btn-bitbucket.active {
 .btn-dropbox:active,
 .btn-dropbox.active,
 .open > .dropdown-toggle.btn-dropbox {
-  color: #ffffff;
+  color: white;
   background-color: #0d6aad;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3936,10 +3939,10 @@ fieldset[disabled] .btn-dropbox.active {
 }
 .btn-dropbox .badge {
   color: #1087dd;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-facebook {
-  color: #ffffff;
+  color: white;
   background-color: #3b5998;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3949,7 +3952,7 @@ fieldset[disabled] .btn-dropbox.active {
 .btn-facebook:active,
 .btn-facebook.active,
 .open > .dropdown-toggle.btn-facebook {
-  color: #ffffff;
+  color: white;
   background-color: #2d4373;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3981,10 +3984,10 @@ fieldset[disabled] .btn-facebook.active {
 }
 .btn-facebook .badge {
   color: #3b5998;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-flickr {
-  color: #ffffff;
+  color: white;
   background-color: #ff0084;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -3994,7 +3997,7 @@ fieldset[disabled] .btn-facebook.active {
 .btn-flickr:active,
 .btn-flickr.active,
 .open > .dropdown-toggle.btn-flickr {
-  color: #ffffff;
+  color: white;
   background-color: #cc006a;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4026,10 +4029,10 @@ fieldset[disabled] .btn-flickr.active {
 }
 .btn-flickr .badge {
   color: #ff0084;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-foursquare {
-  color: #ffffff;
+  color: white;
   background-color: #0072b1;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4039,7 +4042,7 @@ fieldset[disabled] .btn-flickr.active {
 .btn-foursquare:active,
 .btn-foursquare.active,
 .open > .dropdown-toggle.btn-foursquare {
-  color: #ffffff;
+  color: white;
   background-color: #00517e;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4071,10 +4074,10 @@ fieldset[disabled] .btn-foursquare.active {
 }
 .btn-foursquare .badge {
   color: #0072b1;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-github {
-  color: #ffffff;
+  color: white;
   background-color: #444444;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4084,7 +4087,7 @@ fieldset[disabled] .btn-foursquare.active {
 .btn-github:active,
 .btn-github.active,
 .open > .dropdown-toggle.btn-github {
-  color: #ffffff;
+  color: white;
   background-color: #2b2b2b;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4116,10 +4119,10 @@ fieldset[disabled] .btn-github.active {
 }
 .btn-github .badge {
   color: #444444;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-google-plus {
-  color: #ffffff;
+  color: white;
   background-color: #dd4b39;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4129,7 +4132,7 @@ fieldset[disabled] .btn-github.active {
 .btn-google-plus:active,
 .btn-google-plus.active,
 .open > .dropdown-toggle.btn-google-plus {
-  color: #ffffff;
+  color: white;
   background-color: #c23321;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4161,10 +4164,10 @@ fieldset[disabled] .btn-google-plus.active {
 }
 .btn-google-plus .badge {
   color: #dd4b39;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-instagram {
-  color: #ffffff;
+  color: white;
   background-color: #3f729b;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4174,7 +4177,7 @@ fieldset[disabled] .btn-google-plus.active {
 .btn-instagram:active,
 .btn-instagram.active,
 .open > .dropdown-toggle.btn-instagram {
-  color: #ffffff;
+  color: white;
   background-color: #305777;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4206,10 +4209,10 @@ fieldset[disabled] .btn-instagram.active {
 }
 .btn-instagram .badge {
   color: #3f729b;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-linkedin {
-  color: #ffffff;
+  color: white;
   background-color: #007bb6;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4219,7 +4222,7 @@ fieldset[disabled] .btn-instagram.active {
 .btn-linkedin:active,
 .btn-linkedin.active,
 .open > .dropdown-toggle.btn-linkedin {
-  color: #ffffff;
+  color: white;
   background-color: #005983;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4251,10 +4254,10 @@ fieldset[disabled] .btn-linkedin.active {
 }
 .btn-linkedin .badge {
   color: #007bb6;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-tumblr {
-  color: #ffffff;
+  color: white;
   background-color: #2c4762;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4264,7 +4267,7 @@ fieldset[disabled] .btn-linkedin.active {
 .btn-tumblr:active,
 .btn-tumblr.active,
 .open > .dropdown-toggle.btn-tumblr {
-  color: #ffffff;
+  color: white;
   background-color: #1c2d3f;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4296,10 +4299,10 @@ fieldset[disabled] .btn-tumblr.active {
 }
 .btn-tumblr .badge {
   color: #2c4762;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-twitter {
-  color: #ffffff;
+  color: white;
   background-color: #55acee;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4309,7 +4312,7 @@ fieldset[disabled] .btn-tumblr.active {
 .btn-twitter:active,
 .btn-twitter.active,
 .open > .dropdown-toggle.btn-twitter {
-  color: #ffffff;
+  color: white;
   background-color: #2795e9;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4341,10 +4344,10 @@ fieldset[disabled] .btn-twitter.active {
 }
 .btn-twitter .badge {
   color: #55acee;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn-vk {
-  color: #ffffff;
+  color: white;
   background-color: #587ea3;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4354,7 +4357,7 @@ fieldset[disabled] .btn-twitter.active {
 .btn-vk:active,
 .btn-vk.active,
 .open > .dropdown-toggle.btn-vk {
-  color: #ffffff;
+  color: white;
   background-color: #466482;
   border-color: rgba(0, 0, 0, 0.2);
 }
@@ -4386,7 +4389,7 @@ fieldset[disabled] .btn-vk.active {
 }
 .btn-vk .badge {
   color: #587ea3;
-  background-color: #ffffff;
+  background-color: white;
 }
 /*
  * Plugin: Full Calendar
