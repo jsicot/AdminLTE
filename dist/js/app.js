@@ -529,6 +529,7 @@ function _init() {
   $.AdminLTE.boxWidget = {
     selectors: $.AdminLTE.options.boxWidgetOptions.boxWidgetSelectors,
     icons: $.AdminLTE.options.boxWidgetOptions.boxWidgetIcons,
+    animationSpeed: $.AdminLTE.options.animationSpeed,    
     activate: function (_box) {
       var _this = this;
       if (! _box) {
