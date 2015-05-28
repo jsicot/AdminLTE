@@ -229,7 +229,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="sidebar-menu">
           <li class="header">VOUS SOUHAITEZ :</li>
           <!-- Optionally, you can add icons to the links -->
-          <li><a href="#"><i class='fa icon-location2'></i> <span>Découvrir les bibliothèques</span></a></li>
+          <li><a href="#"><i class='fa icon-library'></i> <span>Découvrir les bibliothèques</span></a></li>
+          <li><a href="#"><i class='fa ion-ios-book'></i> <span>S'inscrire et emprunter</span></a></li>
           <li><a href="#"><i class='fa icon-books'></i> <span>Accéder aux collections</span></a></li>
           <li><a href="#"><i class='fa icon-pencil2'></i> <span>Utiliser les espaces de travail</span></a></li>
           <li><a href="#"><i class='fa ion-help-buoy'></i> <span>Obtenir de l'aide</span></a></li>
@@ -244,7 +245,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="combined">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-black-trans">
               <div class="row">
                 <div class="col-md-12 collapse-group">
@@ -267,7 +268,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="books">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-books-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -311,7 +312,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="journals">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-journals-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -333,7 +334,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="thesis">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-thesis-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -355,7 +356,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="oa">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-oa-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -377,7 +378,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="movies">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-movies-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -399,7 +400,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="music">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-music-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -421,7 +422,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="databases">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-databases-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -443,7 +444,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </header>
         </div>
         <div role="tabpanel" class="tab-pane " id="news">
-          <section class="bg-custom">
+          <header class="bg-custom">
             <div class="padding-xl bg-news-trans">
               <div class="row">
                 <div class="col-md-12">
@@ -606,6 +607,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </section>
       <section class="content">
         <!-- Small boxes (Stat box) -->
+    <div class="tab-content">
+     <div role="tabpanel" class="tab-pane active" id="combined">
 
         <div class="row">
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
@@ -639,13 +642,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
             <div class="info-box ">
               <a href="#">
-                <span class="info-box-icon bg-services-active"><i class="fa ion-android-checkbox-outline"></i></span>
-                <span class="overlay"><span class="overlay-label">Réserver, prolonger un document</span></span>
+                <span class="info-box-icon bg-services-active"><i class="fa ion-clock"></i></span>
+                <span class="overlay"><span class="overlay-label">Connaître</span></span>
 
                 <div class="info-box-content text-black hidden-xs ">
-                  <span class="info-box-text">Réserver</span>
+                  <span class="info-box-text">Connaître</span>
                   <span class="info-box-description">
-                    prolonger un document
+                    les horaires des bibliothèques et services
                   </span>
                 </div><!-- /.info-box-content -->
               </a>
@@ -828,7 +831,143 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- =========================================================== -->
         <div class="row">
-          <div class="col-lg-8 ">
+          <div class="col-lg-4 col-lg-push-8">
+            <div class="row db">
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Cairn</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Universalis</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">ScienceDirect</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="info-box-text">Jstor V</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Psycinfo</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Academic Search Premier</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#">  <span class="db-box-text">Muse</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Europresse</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3 hidden-md">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Brill - Journal Archive Online</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+              <div class="col-lg-6 col-sm-6 col-md-3 hidden-md">
+                <!-- small box -->
+                <div class="db-box bg-databases">
+                  <div class="db-access"></div>
+                  <div class="inner">
+                    <a href="#"><span class="db-box-text">Jstor III</span></a>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-database"></i>
+                  </div>
+                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+              </div><!-- ./col -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-lg-pull-4">
             <div class="row news">
               <div class="col-sm-6">
                 <!-- stats -->
@@ -938,145 +1077,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="row db">
-              <div class="col-sm-6">
-                <!-- small box -->
-
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Cairn</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Universalis</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">ScienceDirect</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="info-box-text">Jstor V</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Psycinfo</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Academic Search Premier</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#">  <span class="db-box-text">Muse</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Europresse</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Brill - Journal Archive Online</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-              <div class="col-sm-6">
-                <!-- small box -->
-                <div class="db-box bg-databases">
-                  <div class="db-access"></div>
-                  <div class="inner">
-                    <a href="#"><span class="db-box-text">Jstor III</span></a>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-database"></i>
-                  </div>
-                  <a class="db-box-footer" href="#">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div><!-- ./col -->
-            </div>
-          </div>
         </div>
       </div>
       <!-- =========================================================== -->
+    </div>
+    <div role="tabpanel" class="tab-pane " id="content-articles">
+      test
+    </div>
+
+  </div>
     </section>
     <!-- <section class="content-header">
     <ol class="breadcrumb">
